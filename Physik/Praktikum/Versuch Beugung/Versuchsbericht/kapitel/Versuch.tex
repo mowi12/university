@@ -40,7 +40,7 @@
         
         Die Messfehler sind mit $\Delta L = 5\ \mathrm{mm}$ und $\Delta a_{n} = 2\ \mathrm{mm}$ vorgeben. Diese lassen sich auf das ungenaue Messen mit dem Lineal und unschärfe des Laserstrahls zurückführen. Der Fehler berechnet sich dann mit der Formel für den Größtfehler:
 
-        $$\Delta g = \left|\frac{2 \cdot n \cdot \lambda}{a_{n}}\right| \cdot \Delta L + \left|\frac{n \cdot \lambda \cdot L}{a_{n}^{2}}\right| \cdot \Delta a_{n}$$
+        $$\Delta g = \left|\frac{2 \cdot n \cdot \lambda}{a_{n}}\right| \cdot \Delta L + \left|\frac{2 \cdot n \cdot \lambda \cdot L}{a_{n}^{2}}\right| \cdot \Delta a_{n}$$
 
         Der Fehler der Gitterkonstante beträgt dann für erste und zweite Ordnung:
 
@@ -50,14 +50,16 @@
                 \hline
                 Ordnung & Fehler $\Delta g$\\
                 \hline
-                $n = 1$ & $0,05\ \mathrm{\mu m}$\\
+                $n = 1$ & $6,33\ \mathrm{\mu m}$\\
                 \hline
-                $n = 2$ & $0,10\ \mathrm{\mu m}$\\
+                $n = 2$ & $12,66\ \mathrm{\mu m}$\\
                 \hline
             \end{tabular}
         \end{table}
+        
+        Daraus folgt ein mittlerer größter Fehler von $\approx 9,5\ \mathrm{\mu m}$ und dadurch eine resultierende Gitterkonstante von $g = 9,95\ \pm\ 12,66 \ \mathrm{\mu m}$.
 
-        TODO
+      
 
 \section{Versuch 2 - Bestimmung Spurweite einer CD}
     
@@ -206,4 +208,18 @@
 
 \section{Versuch 6 - Modellversuch zum Auflösungsvermögen des Mikroskops}
 
-    TODO
+In diesem Versuch erfolgt eine Erweiterung der Anordnung durch die Integration einer Objektivlinse unmittelbar hinter dem Gitter. Diese Linse dient dazu, die Lichtpunkte der Maxima so zu fokussieren, dass sie aufeinander liegen. Zusätzlich wird eine Okularlinse in der Nähe der Wand platziert, um das entstehende Bild zu vergrößern. Zur gezielten Steuerung des Lichtflusses setzen wir eine Aperturblende ein. Zunächst werden alle Maxima der Ordnung ≥ 0, mit Hilfe einer Blende, gezielt ein und ausgeblendet was das Bild verändert.
+
+
+\subsection{Beobachtung}
+In der anfänglichen Konfiguration wird die Blende vollständig geöffnet, was dazu führt, dass das Beugungsbild des Gitters in seiner Gesamtheit auf der Wand abgebildet wird. Die resultierenden Punkte auf der Wand erscheinen nun groß und unscharf, wobei die Struktur des Gitters erkennbar ist. Bei schrittweisem Schließen der Blende, bis lediglich das Maximum der 0. Ordnung sichtbar wird, verschwindet auch die Abbildung des Gitters auf der Wand. Durch erneutes Verlagern der Blende, um das Maximum der 1. Ordnung sichtbar zu machen, wird wiederum die Gitterstruktur auf der Wand sichtbar.
+
+Diese Beobachtungen verdeutlichen, dass die abgebildete Gitterstruktur maßgeblich von der Anzahl der eingeblendeten Maxima abhängt. Folglich nimmt die Bildqualität mit einer höheren Anzahl von Maxima zu. Interessanterweise liefert das Maximum der 0. Ordnung keine relevanten Bildinformationen und trägt somit nicht zur Wiedergabe der Gitterstruktur bei. Es kann daher als bedeutungslos für das Bild des Gitters betrachtet werden.
+
+\subsection{Auflösungsvermögen verbessern}
+Die Erhöhung des Auflösungsvermögens kann durch verschiedene Methoden realisiert werden, die im Folgenden näher erläutert werden. Eine effektive Strategie besteht in der Reduzierung der Wellenlänge des eingesetzten Lasers. Durch die Verwendung von kürzeren Wellenlängen kann ein geringerer Beugungswinkel erreicht werden, was wiederum zu einer verbesserten Auflösung führt. Dieser Ansatz basiert auf den grundlegenden Beugungseigenschaften des Lichts und ermöglicht eine präzisere Abbildung feiner Strukturen.
+
+Ein weiterer vielversprechender Ansatz zur Steigerung des Auflösungsvermögens besteht in der Verwendung von größeren Linsen, insbesondere zur optimalen Erfassung des Maximals der 1. Ordnung. Die Auswahl von Linsen mit größerem Durchmesser trägt dazu bei, die Detektion und Abbildung dieser Beugungsordnung zu optimieren, was zu einer gesteigerten Bildqualität führt.
+
+Die Implementierung der Immersionsmikroskopie stellt eine weitere Methode dar. Hierbei wird beispielsweise die Verwendung von Wasser als Immersionsmedium auf dem zu untersuchenden Objekt in Betracht gezogen. Durch die höhere Brechzahl des Wassers wird ein kleinerer Beugungswinkel erreicht, was zu einer verbesserten Auflösung führt. Diese präzisere Brechung des Lichts trägt zur Erhöhung des Auflösungsvermögens bei und ermöglicht eine detailliertere Darstellung der zu analysierenden Strukturen.
+
