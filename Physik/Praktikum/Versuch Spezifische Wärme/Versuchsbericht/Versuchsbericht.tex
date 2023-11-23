@@ -1,0 +1,71 @@
+\documentclass[11pt]{betterallrounder}
+
+\usepackage{float}
+
+\begin{document}
+
+\begin{titlepage}
+
+    \begin{center}
+
+        \begin{minipage}{\textwidth}
+            \begin{center}
+                \includegraphics{bilder/Logo_uulm_Vorlage_100mm_schwarz.pdf}
+            \end{center}
+        \end{minipage}
+    
+        \textsc{\Large }\\[1.5cm]
+        
+        {\huge \bfseries Praktikum\\[0.5cm]}
+        {\huge \bfseries Physik für Naturwissenschaftler}
+
+        \textsc{\Large }\\[1.5cm]
+
+        {\large \bfseries Bericht zum Versuch}\\[0.5cm]
+        
+        % Title
+        {\huge \bfseries Spezifische Wärme\\[0.4cm]}
+
+        \textsc{\Large }\\[1.5cm]
+
+        {\large Durchgeführt am \bfseries{\today}}\\[1cm]
+        
+        {\huge \bfseries Gruppe 6\\[0.4cm]}
+
+        % Gruppenmitglieder
+        \Large
+        \begin{tabular}{rcl}
+            \bfseries{Moritz Wieland} & und & \bfseries{Dominik Beck}\\
+            (\href{mailto:moritz.wieland@uni-ulm.de}{moritz.wieland@uni-ulm.de}) & & (\href{mailto:dominik.beck@uni-ulm.de}{dominik.beck@uni-ulm.de})
+        \end{tabular}
+
+        \textsc{\huge }\\[1cm]
+
+        {\large Betreuer: \bfseries{Oliver Bielik}}\\[1cm]
+
+        {\large Wir bestätigen hiermit, dass wir die Ausarbeitung selbständig erarbeitet haben und
+        detaillierte Kenntnis vom gesamten Inhalt besitzen.}\\[1cm]
+
+        \begin{tabular}{rcl}
+            \hrulefill & und & \hrulefill\\
+            Moritz Wieland & & Dominik Beck
+        \end{tabular}
+    
+        \vfill
+    \end{center}
+\end{titlepage}
+
+% \maketitle
+
+\newpage
+
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+
+\include{kapitel/Einleitung.tex}
+%\include{kapitel/Theorie.tex}
+\include{kapitel/Versuch.tex}
+% \include{kapitel/Literaturverzeichnis.tex}
+% \include{kapitel/Anhang.tex}
+
+\end{document}
