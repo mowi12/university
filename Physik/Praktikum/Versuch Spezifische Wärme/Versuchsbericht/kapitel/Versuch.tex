@@ -4,190 +4,199 @@
 \setcounter{section}{0}
 \setcounter{subsection}{0}
 
-\section{Versuch 1 - Strukturaufklärung}
-
-    \subsection{Versuchsaufbau und -durchführung}
-
-        In diesem Versuch soll die Gitterkonstante $g$ eines optischen Gitters bestimmt werden. Dazu wird ein HeNe-Laser mit einer Wellenlänge von $\lambda = 632,8\ \mathrm{nm}$ verwendet (In allen folgenden Versuchen, in denen ein Laser verwendet wird, handelt es sich um diesen Laser und damit auch um die gleiche Wellenlänge und wird dementsprechen nicht erneut angegeben). Dieser stellt dabei eine kohärente Lichtquelle dar, strahlt also paralleles Licht aus. Dieses
-        Licht wird nun senkrecht auf das Gitter gerichtet, welches sich senkrecht zu Wand befindet. Der Wand dient hier als Schirm. Aus der Lage der Beugungsmaxima lässt sich nun bei bekannter Wellenlänge die Gitterkonstante $g$ bestimmten. Dazu wird der Abstand $L$ zwischen Wand und Gitter gemessen und die Abstände zwischen den Beugungsmaxima gleicher Ordnung. Die Gitterkonstante $g$ ergibt sich dann aus der folgenden Formel:
-
-        $$g = \frac{2 n \lambda L}{a_{n}}$$
-
-        Es kann diese Formel verwendet werden, da die Beugungswinkel sehr klein sind und somit die Kleinwinkelnäherung verwendet werden kann.
-    
+\section{Versuch 1 - Bestimmung der spezifischen Wärme des Wasser auf mechanischen Wege}
+	
+	\subsection{Aufbau/Theorie}
+	\begin{figure}[ht]
+		\label{fig:abb1}
+		   \begin{center}
+		\includegraphics[width=0.2\textwidth]{bilder/Schuerholz.png}
+		\caption{Schürholzapparatur}
+	\end{center}
+	\end{figure}
+		Die spezifische Wärmeänderung eines Stoffes charakterisiert die quantitativen Veränderungen der inneren Energie pro Masseneinheit, die auftreten, wenn sich die Temperatur des Stoffes entsprechend ändert. Die Spezifische Wärmekapazität misst also die Fähigkeit eines Materials, Wärmeenergie zu absorbieren oder abzugeben und dabei die Temperatur zu verändern. Diese versuchen wir im folgenden mit der Abbildung \ref{fig:abb1} zu bestimmen. Dazu wird das Kalorimeter mit Wasser befüllt und dann durch Reibung des Fadens Wärme erzeugt die in das Kalorimeter übergeht. Aus der Differenz der Wärme des Wasser im Kalorimeter lässt sich nun die Wärmeenergie bestimmen welche der Reibungsenergie entsprechen sollte.
+		Dafür nutzen wir folgende Formeln:
+		
+		Reibungsenergie:
+		$$W_{r} = F_{r} \cdot 2\pi \cdot r \cdot n$$
+		
+		Wärmeenergie:
+		$$Q_{r} =  (\Gamma_{K} + m_{\omega}c_{\omega}) \cdot \Delta T$$
+		
+		Setzt man diese nun gleich lässt sich die spezifische Wärmekapazität von dem Wasser berechnen:
+		$$G \cdot 2\pi \cdot r \cdot n = (m_{K}c_{K} + m_{\omega}c_{\omega}) \cdot \Delta T$$
+		$$ \Rightarrow c_{\omega} = \frac{\frac{W_{r}}{\Delta T} - m_{K}c_{K}}{m_{\omega}}$$		
+		
+		Dies werden wir nun im folgenden Versuch durchführen.
+		
+	    \subsection{Versuchsdurchführung}
+		\textbf{\textcolor{red}{TODO}}
+	
+  
     \subsection{Ergebnisse}
-
-        In der folgenden Tabelle sind die Messwerte mit den dazugehörigen Gitterkonstanten aufgelistet. Die Gitterkonstante wurde dabei für die erste und zweite Ordnung bestimmt.
 
         \begin{table}[H]
             \centering
             \begin{tabular}{|l|l|l|l|}
                 \hline
-                & Abstand $a_{n}$ & Abstand $L$ & Gitterkonstante $g_{n}$\\
+                & Anzahl der Umdrehungen $n$ & Temperatur in °C & $\Delta$ Temperatur in °C\\
                 \hline
-                $n = 1$ & $19,0\ \mathrm{cm}$ & $150,0\ \mathrm{cm}$ & $9,99\ \mathrm{\mu m}$\\
+                $n = 0$ & - & -& -\\
                 \hline
-                $n = 2$ & $38,3\ \mathrm{cm}$ & $150,0\ \mathrm{cm}$ & $9,91\ \mathrm{\mu m}$\\
+                $n = 50$ & - & - & -\\
+                \hline
+                $n = 100$ & - & - & -\\
+                \hline
+                $n = 150$ & - & - & -\\
+                \hline
+                $n = 200$ & - & - & -\\
+                \hline
+                $n = 250$ & - & - & -\\
                 \hline
             \end{tabular}
         \end{table}
 
-        Der Mittelwert der Gitterkonstanten beträgt $g = 9,95\ \mathrm{\mu m}$.
+Der ermittelte Wert für die spezifische Wärmeänderung $c_{ermittelt\omega} = ? \frac{J}{kgK}$ weicht leicht vom Literaturwert für die spezifische Wärmekapazität von Wasser $c_{Lit\omega} = 4190 \frac{J}{kgK}$ ab. Diese geringfügige Diskrepanz könnte auf einzelne Messungenauigkeiten zurückgeführt werden, die sich auf das Endergebnis auswirken.
+Darüber hinaus ist anzumerken, dass eine hundertprozentige Energieerhaltung bei der Umwandlung von Reibungsenergie in Wärmeenergie in der Praxis nicht realisierbar ist. Das kann zu weiteren Abweichungen zwischen dem gemessenen und dem theoretisch erwarteten Wert führen. Die Verfälschung des genauen Ergebnisses ist daher teilweise auf die inhärente Unvollkommenheit praktischer Energieumwandlungsprozesse zurückzuführen. 
 
-        Der angegebene Wert der Gitterkonstante beträgt $g = 10\ \mathrm{\mu m}$.
+
+\section{Versuch 2 - Vgl. verschiedener Temperaturmessmethoden}
+    \subsection{Theorie Thermoelement/Widerstandsthermometer und Strahlungsthermometer}
+    \subsubsection*{Thermoelement:}
+    	\begin{figure}[ht]
+    	\label{fig:abb2}
+    	\begin{center}
+    		\includegraphics[width=0.5\textwidth]{bilder/Seebeck-Effekt.png}
+    		\caption{Der Seebeck-Effekt vereinfacht dargestellt.}
+    	\end{center}
+    \end{figure}
+    Durch die Anwendung eines Thermoelements ist es möglich, die Temperatur eines Stoffes zu bestimmen. Bei einem elektrischen Leiter, dessen zwei Enden unterschiedlichen Temperaturen ausgesetzt sind, entsteht aufgrund des Seebeck-Effekts eine elektrische Spannung. Dieser Effekt basiert darauf, dass Elektronen am wärmeren Ende eine höhere kinetische Energie aufweisen, wie in Abbildung \ref{fig:abb2} illustriert. Im Gegensatz dazu besitzen Elektronen am kälteren Ende eine geringere Bewegungsenergie, was zu einer höheren Elektronendichte führt. Der resultierende Unterschied in der Elektronendichte führt zu einer messbaren elektrischen Spannung.
     
-    \subsection{Fehlerberechung}
-        
-        Die Messfehler sind mit $\Delta L = 5\ \mathrm{mm}$ und $\Delta a_{n} = 2\ \mathrm{mm}$ vorgeben. Diese lassen sich auf das ungenaue Messen mit dem Lineal und unschärfe des Laserstrahls zurückführen. Der Fehler berechnet sich dann mit der Formel für den Größtfehler:
+   Die Höhe der gemessenen Spannung korreliert direkt mit der Größe des Temperaturunterschieds zwischen den beiden Enden des Leiters. Ein größerer Temperaturunterschied führt also zu einer höheren Spannung, die durch das Thermoelement erfasst werden kann.
+   \subsubsection*{Widerstandsthermometer:}
+   Das Widerstandsthermometer besteht lediglich aus einem Widerstand welcher an einem Multimeter angeschlossen ist. Taucht man diesen in die zu messende Flüssigkeit und der angezeigte Widerstand liegt zwischen 2 Werten in der Tabelle, welche in der Anleitung angehängt ist, so lässt sich durch Interpolation ein genauerer Temperaturwert bestimmen. Sei R der Widerstand und und T die Temperatur so lässt sich mit folgender Formel die gemessene Temperatur berechnen.
+   $$T = T_{1} + \frac{R - R_{1}}{R_{2} - R_{1}} \cdot \Delta T$$
+   \subsubsection*{Strahlungsthermometer}
+   Ein Strahlungsthermometer misst die Temperatur eines Objekts, indem es die von ihm emittierte Infrarotstrahlung erfasst. Die gemessene Temperatur steht in direktem Zusammenhang mit der Temperatur des Objekts, sowie dem Abstand des Objekts zum Thermometer.  Der Abstand sollte also $\leq$ 10cm zum Objekt liegen um störende Strahlen vom Rand oder der Umgebung zu vermeiden. 
+    \subsection{Versuchsaufbau und -durchführung}
+     Kallibrieren
 
-        $$\Delta g = \left|\frac{2 \cdot n \cdot \lambda}{a_{n}}\right| \cdot \Delta L + \left|\frac{2 \cdot n \cdot \lambda \cdot L}{a_{n}^{2}}\right| \cdot \Delta a_{n}$$
-
-        Der Fehler der Gitterkonstante beträgt dann für erste und zweite Ordnung:
-
-        \begin{table}[H]
-            \centering
-            \begin{tabular}{|l|l|}
-                \hline
-                Ordnung & Fehler $\Delta g$\\
-                \hline
-                $n = 1$ & $6,33\ \mathrm{\mu m}$\\
-                \hline
-                $n = 2$ & $12,66\ \mathrm{\mu m}$\\
-                \hline
-            \end{tabular}
-        \end{table}
-        
-        Daraus folgt ein mittlerer größter Fehler von $\approx 9,5\ \mathrm{\mu m}$ und dadurch eine resultierende Gitterkonstante von $g = 9,95\ \pm\ 12,66 \ \mathrm{\mu m}$.
-
+		\textbf{\textcolor{red}{TODO}}
+    \subsection{Ergebnisse}
       
 
-\section{Versuch 2 - Bestimmung Spurweite einer CD}
+\section{Versuch 3 - Bestimmung der spezifischen Wärme von Wasser auf elektrischem Wege}
+    \subsection{Theorie}
     
-    \subsection{Versuchsaufbau und -durchführung}
-        
-        Der Versuchsaufbau ist identisch zum Aufbau von Versuch 1. Allerdings wird eine CD anstelle eines optischen Gitters verwendet. Der restliche Aufbau bleibt gleich.
+        	\begin{figure}[ht]
+    	\label{fig:abb3}
+    	\begin{center}
+    		\includegraphics[width=0.6\textwidth]{bilder/Elektrisch.png}
+    		\caption{Auffbau Versuch 3.}
+    	\end{center}
+    \end{figure}
+    Die spezifische Wärmekapazität des Wassers kann auch bestimmt werden, indem man mit Hilfe der
+    Joulschen Wärme, die in einem stromdurchflossenen Leiter entsteht, eine definierte Wassermenge
+    erwärmt und deren Temperaturerhöhung misst, siehe Abbildung \ref{fig:abb3}. Hierzu wird eine Heizspirale ins Kalorimeter
+    eingebracht, die mit einem Niedervolt-Netzgerät betrieben wird. Während des Aufheizvorgangs (5
+    Minuten) werden Strom (ca. 5 A) und Spannung (ca. 10V) mit einem Amperemeter bzw. einem
+    Voltmeter gemessen (wird direkt vom Gerät angezeigt). 
+   Da wir von einem abgeschlossenen System ausgehen, können die zugeführte und aufgenommene
+   Energie gleichgesetzt werden. Stellt man dann noch die entstandene Gleichung nach dem
+   gewünschten Wert um so kann die spezifische Wärmekapazität von Wasser bestimmt werden.
+   
+   \noindent Hierzu benötigen die aufgenommen Wärmemenge:
+   $$\Delta Q = (C_{K} + m_{Wasser}c{Wasser} ) \cdot \Delta T$$
+   und die aufgewendete elektrische Arbeit:
+   $$\Delta W =  U \cdot I \cdot \Delta t$$
+   
+   Nun lässt es sich Gleichsetzen und nach $c_{Wasser}$ umstellen:
+   $$c_{Wasser} = \frac{UI\Delta t - C_{K}\Delta T}{m_{Wasser} \Delta T}$$
+    \subsection{Versuchsdurchführung}
 
-        Da der Beugungswinkel bei der CD um einiges größer ist als bei Versuch 1, wird der Abstand $L$ zwischen CD und Wand um vieles verringert um die Beugungsmaxima überhaupt beobachten zu können. Zudem kann die Kleinwinkelnäherung nicht mehr verwendet werden. Die Spurweite $d$ ergibt sich dann aus der Formel:
-
-        $$g = \frac{n \cdot \lambda}{\sin(\tan(\frac{a_{n}}{2 L}))}$$
-
-    \subsection{Ergebnisse}
-        
-        \begin{table}[H]
-            \centering
-            \begin{tabular}{|l|l|l|}
-                \hline
-                & Abstand $a_{n}$ & Abstand $L$\\
-                \hline
-                $n = 1$ & $34,0 \pm 0,1\ \mathrm{cm}$ & $39,5 \pm 0,1\ \mathrm{cm}$\\
-                \hline
-            \end{tabular}
-        \end{table}
-
-        Mit obiger Formel ergibt sich für die Spurweite $g \approx 1,60\ \mu m$.
-
-        Der Literaturwert für die Spurweite einer CD beträgt $g = 1,60\ \mu m$.
-
-\section{Versuch 3 - Spektralanalyse}
-    
-    \subsection{Versuchsaufbau- und durchführung}
-        
-        Im ersten Teil des Versuchs werden mit Hilfe eines optischen Gitters die Wellenlängen der Spektrallinien einer Gasentladungslampe bestimmt. Dazu wird die Gasentladungslampe anstatt des Lasers aus Versuch 1 verwendet. Die Reihenfolge der Bauteile für diesen Versuch sieht wie folgt aus:
-        Nach ner Gasentladungslampe kommt erst ein Kondensorlinsensystem. Danach ein Spalt und danach eine Kollimatorlinse mit einer Brennweite von $f = 130\ \mathrm{mm}$. Der Spalt muss so zwischen den beiden Linsen/Linsensystemen positioniert werden, dass das Licht den Spalt gut ausleuchten und am besten im Brennpunkt des Linsensystem steht. Trifft danach das Licht auf die Kollimatorlinse wird es parallelisiert. Danach kommt das optische Gitter. Das Gitter wird so positioniert, dass das Licht senkrecht auf das Gitter trifft. Als Schirm wird wieder die Wand benutzt.
-
-        Im zweiten Teil des Versuchs wird mit Hilfe eines Faseroptik-Spektrometers die Wellenlängen der Spektrallinien der Gasentladungslampe bestimmt. Dazu wird das Faseroptik-Spektrometer direkt in das Licht der Gasentladungslampe gehalten. Die Wellenlängen werden dann auf einem Computer angezeigt.
-        
+        		\textbf{\textcolor{red}{TODO}}
     \subsection{Ergebnisse}
 
-        Ist der Versuch richtig aufgebaut, sollten auf dem Schirm mehrere Streifen an Farben zu sehen sein: rot/orange, grün, blau und \glqq hellblau\grqq. Hellblau ist allerdings nur zu sehen, da die Wand, bzw. das Blatt Papier, welches als Schirm dient UV-Strahlen reflektiert und es dadurch sichtbar macht. Die anderen Farben sind die Spektrallinien der Gasentladungslampe. Die Wellenlängen der Spektrallinien lassen sich mit der Formel aus Versuch 1 bestimmen:
 
-        $$\lambda = \frac{a_{n} \cdot g}{2nL}$$
-
-        Die folgenden Werte sind die Messungen der Abstände $a_{n}$ zwischen den Beugungsmaxima der jeweiligen Farbe und der Abstand $L$ zwischen Gitter und Schirm. Die Ergebnisse sind in der letzten Spalte der Tabelle aufgelistet.
-        
-        \begin{table}[H]
-            \centering
-            \begin{tabular}{|l|l|l|l|}
-                \hline
-                Farbe & Abstand $a_{\text{Farbe}}$ & Abstand $L$ & Wellenlänge $\lambda_{\text{Farbe}}$\\
-                \hline
-                Orange & $15,2 \pm 0,1\ \mathrm{cm}$ & $130,3 \pm 0,1\ \mathrm{cm}$ & $583,3\ \mathrm{nm}$\\
-                \hline
-                Grün & $14,3 \pm 0,1\ \mathrm{cm}$ & $130,3 \pm 0,1\ \mathrm{cm}$ & $548,7\ \mathrm{nm}$\\
-                \hline
-                Blau & $11,4 \pm 0,1\ \mathrm{cm}$ & $130,3 \pm 0,1\ \mathrm{cm}$ & $437,5\ \mathrm{nm}$\\
-                \hline
-                Hellblau & $9,8 \pm 0,1\ \mathrm{cm}$ & $130,3 \pm 0,1\ \mathrm{cm}$ & $376,1\ \mathrm{nm}$\\
-                \hline
-            \end{tabular}
-        \end{table}
-
-        Die folgende Tabelle zeigt nun die Wellenlängen der Spektrallinien der Gasentladungslampe, welche mit dem Faseroptik-Spektrometer gemessen wurden, die berechneten Werte aus dem ersten Teil und die Literaturwerte:
 
         \begin{table}[H]
             \centering
-            \begin{tabular}{|l|l|l|l|}
+            \begin{tabular}{|l|l|l|l|l|l|l|}
                 \hline
-                Farbe & Wellenlänge (Spektrometer) & Wellenlänge (berechnet) & Wellenlänge (Literatur)\\
+                $G_{B}$in Kg & $G_{W}$ in Kg & Strom in A & Spannung in Volt  & $T_{1}$ in °C & $T_{2}$ in °C & $\Delta T$ in °C \\
                 \hline
-                Orange & $580\ \mathrm{nm}$ & $583,3\ \mathrm{nm}$ & $579\ \mathrm{nm}$\\
+                -& - & - & - & - & - & - \\
                 \hline
-                Grün & $547\ \mathrm{nm}$ & $548,7\ \mathrm{nm}$ & $546\ \mathrm{nm}$\\
-                \hline
-                Blau & $436\ \mathrm{nm}$ & $437,5\ \mathrm{nm}$ & $435\ \mathrm{nm}$\\
-                \hline
-                Hellblau & $366\ \mathrm{nm}$ & $376,1\ \mathrm{nm}$ & $366\ \mathrm{nm}$\\
-                \hline
+    
             \end{tabular}
         \end{table}
 
-        Alle Werte, mit Ausnahme des berechneten Wertes für die hellblaue Spektrallinie, liegen im Fehlerbereich der Literaturwerte. Der berechnete Wert für die hellblaue Spektrallinie liegt allerdings um $10\ \mathrm{nm}$ über dem Literaturwert. Dieser Fehler lässt sich auf die Ungenauigkeit des Messens mit dem Lineal zurückführen. Die hellblaue Spektrallinie ist sehr schwach und somit schwer zu erkennen.
+\section{Versuch 4 - Spezifische Wärmekapazität fester Körper}
+	    \subsection{Theorie}
+	Die spezifische Wärmekapazität fester Körper wird mittels der Mischungsmethode bestimmt, indem ein Probekörper der Masse $m_{1}$ auf die Temperatur von siedendem Wasser erhitzt wird und anschließend in ein Kalorimeter mit Wasser der Masse $m_{2}$ und Anfangstemperatur $T_{2}$ gebracht wird. Die Entwicklung der Mischtemperatur $T_{misch}$ aufgezeichnet wird aufgezeichnet und draus die Wärmekapazität des Körpers berechnet.
+	
+	Dazu benötigt man die vom Körper abgegeben Wärmeenergie:
+	$$\Delta Q_{1} = m_{1}c_{1} \cdot (T_{1} - T_{misch})$$
+	wobei $c_{1}$ die spezifische Wärmekapazität ist die berechnet werden soll. Die im Kalorimeter aufgenommen Wärmemenge lässt sich mit:
+	$$\Delta Q_{2} = (C_{K} + m_{2}c_{Wasser}) \cdot (T_{misch} - T_{2})$$
+	berechnen.
+	
+	Da wir von einem abgeschlossenen System ausgehen lässt sich $c_{1}$ durch Gleichsetzen von $Q_{1} = Q_{2}$ und umstellen tatsächlich berechnen:
+	$$c_{1} = \frac{(C_{K} +m_{2}c_{Wasser}) \cdot (T_{misch} - T_{2})}{m_{1} \cdot (T_{1} - T_{misch})}$$
+	
+	Der Aufbau sieht in etwa so aus:
+	       	\begin{figure}[ht]
+		\label{fig:abb4}
+		\begin{center}
+			\includegraphics[width=0.6\textwidth]{bilder/Fest.png}
+			\caption{Auffbau Versuch 4.}
+		\end{center}
+	\end{figure}
+    \subsection{Versuchsdurchführung}
 
-\section{Versuch 4 - Beugungserscheinungen am Einzelspalt}
 
-    \subsection{Versuchsaufbau und -durchführung}
-
-        Für den ersten Teil des Versuchs wird erneut ein ähnlicher Aufbau gewählt wie in Versuch 1. Allerdings wird diesmal kein optisches Gitter benutzt sondern ein Objekthalter, in welchem einmal 7 verschieden große Linien und einmal 7 verschieden große Spalten zu erkennen sind. Die Spalte und die Linien sind immer gleich groß. Die Frage die nun geklärt werden soll, ist, was sich ändert, wenn man den Laser durch die unterschiedlich großen Spalte scheint.
-
-        Für den zweiten Teil wird der gleiche Aufbau verwendet. Es soll die Breite des Spaltes, bzw. die Breite der Linie bestimmt werden und mit den Herstellerangaben verglichen werden. Dazu wird der Abstand $L$ zwischen Spalt und Schirm gemessen und die Abstände $a_{1}$ zwischen den Beugungsmaxima für die Spalt- bzw. Linienbreiten $40, 80$ und $150\ \mathrm{\mu m}$. Die Breite des Spaltes bzw. der Linie ergibt sich dann aus der Formel:
-
-        $$g = \frac{2 \lambda L}{a_{1}}$$
-
-        Zusätzlich soll die Frage geklärt werden, worin der Unterschied im Beugungsbild zwischen einem Spalt und einer Linie besteht.
-    
+    		\textbf{\textcolor{red}{TODO}}
     \subsection{Ergebnisse}
 
-        Im ersten Teil soll der visuelle Unterschied zwischen dem Beugungsbild eines Spaltes und einer Linie beobachtet werden. In den Beugungsbildern sind die Beugungsmaxima der ersten $15$ bis $25$ Maxima zu sehen. Es lässt sich beobachten, dass die beobachtbaren Punkte der Beugungsmaxima mit abnehmender Spaltbreite immer länglicher werden. 
 
-        Im zweiten Teil soll die Breite des Spaltes bzw. der Linie bestimmt werden. Dazu macht es Sinn zuerst die Frage zu klären, worin der Unterschied im Beugungsbild zwischen Spalt und Linie liegt. Es lässt sich erkennen, dass die Beugungsbilder von Spalt und Linie bei gleicher Breite/Dicke komplett identisch sind. Das liegt daran, dass das Licht an einer Kante gebeugt wird. Damit ist es egal, ob es sich um eine Spalte oder eine Linie handelt.
-        
-        Die Messwerte sind in der folgenden Tabelle aufgelistet:
 
         \begin{table}[H]
             \centering
             \begin{tabular}{|l|l|l|l|}
                 \hline
-                Breite (Herstellerangabe) & Abstand $a_{1}$ & Abstand $L$ & Breite (berechnet)\\
+                Metallart & $\Delta T_{1}$ & $\Delta T_{2}$ & \o $ \Delta T_{3}$\\
                 \hline
-                $40\ \mathrm{\mu m}$ & $4,6 \pm 0,1\ \mathrm{cm}$ & $150 \pm 0,1\ \mathrm{cm}$ & $41,3\ \mathrm{\mu m}$\\
+                Eisen& - & - & - \\
                 \hline
-                $80\ \mathrm{\mu m}$ & $2,4 \pm 0,1\ \mathrm{cm}$ & $150 \pm 0,1\ \mathrm{cm}$ & $79,1\ \mathrm{\mu m}$\\
+                Messing & - & - & - \\
                 \hline
-                $150\ \mathrm{\mu m}$ & $1,3 \pm 0,1\ \mathrm{cm}$ & $150 \pm 0,1\ \mathrm{cm}$ & $146,0\ \mathrm{\mu m}$\\
+                Aluminium& - & - & - \\
                 \hline
             \end{tabular}
         \end{table}
+        
+        \begin{table}[H]
+        	\centering
+        	\begin{tabular}{|l|l|l|l|}
+        		\hline
+        		Metallart & Literaturwert $(\frac{J}{KgK})$ & Berechnet $(\frac{J}{KgK})$ & Abweichung $(\frac{J}{KgK})$ \\
+        		\hline
+        		Eisen& - & - & - \\
+        		\hline
+        		Messing & - & - & - \\
+        		\hline
+        		Aluminium& - & - & - \\
+        		\hline
+        	\end{tabular}
+        \end{table}
 
-        Die berechneten Werte liegen im Fehlerbereich der Herstellerangaben, bzw. kommen diesen sehr nahe. Die Abweichungen lassen sich auf die Ungenauigkeit des Messens mit dem Lineal zurückführen.
 
-\section{Versuch 5 - Beugungserscheingung an einem Haar}
-    
+
+\section{Versuch 5 - Latente Wärme - die spezifische Schmelzwärme von Wassser}
+    \subsection{Theorie}
     \subsection{Versuchsaufbau und -durchführung}
         
-        In diesem Versuch wird erneut ein ähnlicher Aufbau wie in Versuch 1 verwendet. Allerdings wird diesmal ein Haar anstatt eines optischen Gitters verwendet. Das Haar wird dabei senkrecht in ein Objekthalter gespannt und an die Stelle platziert, an der vorher der Laser stand.
-        Es soll nun anhand der Beugunsmaxima die Dicke des Haares bestimmt werden. Dazu wird der Abstand $L$ zwischen Haar und Schirm gemessen und der Abstand $a_{1}$. Die Dicke des Haares ergibt sich aus der Formel:
 
-        $$g = \frac{2 \lambda L}{a_{1}}$$
     
     \subsection{Ergebnisse}
 
@@ -203,23 +212,4 @@
                 \hline
             \end{tabular}
         \end{table}
-
-        Die berechnete Dicke des Haares stimmt mit online recherchierten Werten überein. Die Abweichung lässt sich auf die Ungenauigkeit des Messens mit dem Lineal zurückführen.
-
-\section{Versuch 6 - Modellversuch zum Auflösungsvermögen des Mikroskops}
-
-In diesem Versuch erfolgt eine Erweiterung der Anordnung durch die Integration einer Objektivlinse unmittelbar hinter dem Gitter. Diese Linse dient dazu, die Lichtpunkte der Maxima so zu fokussieren, dass sie aufeinander liegen. Zusätzlich wird eine Okularlinse in der Nähe der Wand platziert, um das entstehende Bild zu vergrößern. Zur gezielten Steuerung des Lichtflusses setzen wir eine Aperturblende ein. Zunächst werden alle Maxima der Ordnung ≥ 0, mit Hilfe einer Blende, gezielt ein und ausgeblendet was das Bild verändert.
-
-
-\subsection{Beobachtung}
-In der anfänglichen Konfiguration wird die Blende vollständig geöffnet, was dazu führt, dass das Beugungsbild des Gitters in seiner Gesamtheit auf der Wand abgebildet wird. Die resultierenden Punkte auf der Wand erscheinen nun groß und unscharf, wobei die Struktur des Gitters erkennbar ist. Bei schrittweisem Schließen der Blende, bis lediglich das Maximum der 0. Ordnung sichtbar wird, verschwindet auch die Abbildung des Gitters auf der Wand. Durch erneutes Verlagern der Blende, um das Maximum der 1. Ordnung sichtbar zu machen, wird wiederum die Gitterstruktur auf der Wand sichtbar.
-
-Diese Beobachtungen verdeutlichen, dass die abgebildete Gitterstruktur maßgeblich von der Anzahl der eingeblendeten Maxima abhängt. Folglich nimmt die Bildqualität mit einer höheren Anzahl von Maxima zu. Interessanterweise liefert das Maximum der 0. Ordnung keine relevanten Bildinformationen und trägt somit nicht zur Wiedergabe der Gitterstruktur bei. Es kann daher als bedeutungslos für das Bild des Gitters betrachtet werden.
-
-\subsection{Auflösungsvermögen verbessern}
-Die Erhöhung des Auflösungsvermögens kann durch verschiedene Methoden realisiert werden, die im Folgenden näher erläutert werden. Eine effektive Strategie besteht in der Reduzierung der Wellenlänge des eingesetzten Lasers. Durch die Verwendung von kürzeren Wellenlängen kann ein geringerer Beugungswinkel erreicht werden, was wiederum zu einer verbesserten Auflösung führt. Dieser Ansatz basiert auf den grundlegenden Beugungseigenschaften des Lichts und ermöglicht eine präzisere Abbildung feiner Strukturen.
-
-Ein weiterer vielversprechender Ansatz zur Steigerung des Auflösungsvermögens besteht in der Verwendung von größeren Linsen, insbesondere zur optimalen Erfassung des Maximals der 1. Ordnung. Die Auswahl von Linsen mit größerem Durchmesser trägt dazu bei, die Detektion und Abbildung dieser Beugungsordnung zu optimieren, was zu einer gesteigerten Bildqualität führt.
-
-Die Implementierung der Immersionsmikroskopie stellt eine weitere Methode dar. Hierbei wird beispielsweise die Verwendung von Wasser als Immersionsmedium auf dem zu untersuchenden Objekt in Betracht gezogen. Durch die höhere Brechzahl des Wassers wird ein kleinerer Beugungswinkel erreicht, was zu einer verbesserten Auflösung führt. Diese präzisere Brechung des Lichts trägt zur Erhöhung des Auflösungsvermögens bei und ermöglicht eine detailliertere Darstellung der zu analysierenden Strukturen.
 
