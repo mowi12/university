@@ -1,0 +1,92 @@
+\documentclass[11pt]{betterallrounder}
+
+\begin{document}
+
+\begin{titlepage}
+
+    \begin{center}
+
+        \begin{minipage}{\textwidth}
+            \begin{center}
+                \includegraphics{bilder/Logo_uulm_Vorlage_100mm_schwarz.pdf}
+            \end{center}
+        \end{minipage}
+    
+        \textsc{\Large }\\[1.5cm]
+        
+        {\huge \bfseries Praktikum\\[0.5cm]}
+        {\huge \bfseries Physik für Naturwissenschaftler}
+
+        \textsc{\Large }\\[1.5cm]
+
+        {\large \bfseries Bericht zum Versuch}\\[0.5cm]
+        
+        % Title
+        {\huge \bfseries Elektrische Eigenschaften\\[0.4cm]}
+
+        \textsc{\Large }\\[1.5cm]
+
+        {\large Durchgeführt am \bfseries{\today}}\\[1cm]
+        
+        {\huge \bfseries Gruppe 6\\[0.4cm]}
+
+        % Gruppenmitglieder
+        \Large
+        \begin{tabular}{rcl}
+            \bfseries{Moritz Wieland} & und & \bfseries{Dominik Beck}\\
+            (\href{mailto:moritz.wieland@uni-ulm.de}{moritz.wieland@uni-ulm.de}) & & (\href{mailto:dominik.beck@uni-ulm.de}{dominik.beck@uni-ulm.de})
+        \end{tabular}
+
+        \textsc{\huge }\\[1cm]
+
+        {\large Betreuer: \bfseries{Martin Nass}}\\[1cm]
+
+        {\large Wir bestätigen hiermit, dass wir die Ausarbeitung selbständig erarbeitet haben und
+        detaillierte Kenntnis vom gesamten Inhalt besitzen.}\\[1cm]
+
+        \begin{tabular}{rcl}
+            \hrulefill & und & \hrulefill\\
+            Moritz Wieland & & Dominik Beck
+        \end{tabular}
+    
+        \vfill
+    \end{center}
+\end{titlepage}
+
+% \maketitle
+
+\newpage
+
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+
+\include{kapitel/Einleitung.tex}
+\include{kapitel/Theorie.tex}
+\include{kapitel/Versuch.tex}
+\include{kapitel/Literaturverzeichnis.tex}
+\include{kapitel/Anhang.tex}
+
+\chapter*{Boxen}
+\addcontentsline{toc}{chapter}{Boxen}
+\setcounter{chapter}{5}
+\setcounter{section}{0}
+\setcounter{subsection}{0}
+
+\section{Section Boxen}
+
+\subsection{Subsection Boxen}
+
+\dfn{Heading}{Body}
+\bsp{Heading}{Body}
+\sat{Heading}{Body}
+\lem{Heading}{Body}
+\kor{Heading}{Body}
+
+\fra{Heading}{Body}
+\loes{Body}
+
+\bem{Body}
+
+\bew{Body}
+
+\end{document}
