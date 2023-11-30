@@ -11,9 +11,18 @@
         In diesem Versuch soll die Gitterkonstante $g$ eines optischen Gitters bestimmt werden. Dazu wird ein HeNe-Laser mit einer Wellenlänge von $\lambda = 632,8\ \mathrm{nm}$ verwendet (In allen folgenden Versuchen, in denen ein Laser verwendet wird, handelt es sich um diesen Laser und damit auch um die gleiche Wellenlänge und wird dementsprechen nicht erneut angegeben). Dieser stellt dabei eine kohärente Lichtquelle dar, strahlt also paralleles Licht aus. Dieses
         Licht wird nun senkrecht auf das Gitter gerichtet, welches sich senkrecht zu Wand befindet. Der Wand dient hier als Schirm. Aus der Lage der Beugungsmaxima lässt sich nun bei bekannter Wellenlänge die Gitterkonstante $g$ bestimmten. Dazu wird der Abstand $L$ zwischen Wand und Gitter gemessen und die Abstände zwischen den Beugungsmaxima gleicher Ordnung. Die Gitterkonstante $g$ ergibt sich dann aus der folgenden Formel:
 
-        $$g = \frac{2 n \lambda L}{a_{n}}$$
+        \begin{equation}
+            g = \frac{2 n \lambda L}{a_{n}}
+        \end{equation}
 
         Es kann diese Formel verwendet werden, da die Beugungswinkel sehr klein sind und somit die Kleinwinkelnäherung verwendet werden kann.
+
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.5\textwidth]{bilder/Physik_Aufbau_01.png}
+            \caption{Versuchsaufbau Versuch 1}
+            \label{fig:Versuchsaufbau1}
+        \end{figure}
     
     \subsection{Ergebnisse}
 
@@ -21,6 +30,8 @@
 
         \begin{table}[H]
             \centering
+            \caption{Messwerte Versuch 1}
+            \vspace*{1em}
             \begin{tabular}{|l|l|l|l|}
                 \hline
                 & Abstand $a_{n}$ & Abstand $L$ & Gitterkonstante $g_{n}$\\
@@ -32,20 +43,22 @@
             \end{tabular}
         \end{table}
 
-        Der Mittelwert der Gitterkonstanten beträgt $g = 9,95\ \mathrm{\mu m}$.
-
         Der angegebene Wert der Gitterkonstante beträgt $g = 10\ \mathrm{\mu m}$.
     
     \subsection{Fehlerberechung}
         
         Die Messfehler sind mit $\Delta L = 5\ \mathrm{mm}$ und $\Delta a_{n} = 2\ \mathrm{mm}$ vorgeben. Diese lassen sich auf das ungenaue Messen mit dem Lineal und unschärfe des Laserstrahls zurückführen. Der Fehler berechnet sich dann mit der Formel für den Größtfehler:
 
-        $$\Delta g = \left|\frac{2 \cdot n \cdot \lambda}{a_{n}}\right| \cdot \Delta L + \left|\frac{2 \cdot n \cdot \lambda \cdot L}{a_{n}^{2}}\right| \cdot \Delta a_{n}$$
+        \begin{equation}
+            \Delta g = \left|\frac{2 \cdot n \cdot \lambda}{a_{n}}\right| \cdot \Delta L + \left|\frac{2 \cdot n \cdot \lambda \cdot L}{a_{n}^{2}}\right| \cdot \Delta a_{n}
+        \end{equation}
 
         Der Fehler der Gitterkonstante beträgt dann für erste und zweite Ordnung:
 
         \begin{table}[H]
             \centering
+            \caption{Fehlerwerte Versuch 1}
+            \vspace*{1em}
             \begin{tabular}{|l|l|}
                 \hline
                 Ordnung & Fehler $\Delta g$\\
@@ -67,14 +80,18 @@
         
         Der Versuchsaufbau ist identisch zum Aufbau von Versuch 1. Allerdings wird eine CD anstelle eines optischen Gitters verwendet. Der restliche Aufbau bleibt gleich.
 
-        Da der Beugungswinkel bei der CD um einiges größer ist als bei Versuch 1, wird der Abstand $L$ zwischen CD und Wand um vieles verringert um die Beugungsmaxima überhaupt beobachten zu können. Zudem kann die Kleinwinkelnäherung nicht mehr verwendet werden. Die Spurweite $d$ ergibt sich dann aus der Formel:
+        Da der Beugungswinkel bei der CD um einiges größer ist als bei Versuch 1, wird der Abstand $L$ zwischen CD und Wand um vieles verringert um die Beugungsmaxima überhaupt beobachten zu können. Zudem kann die Kleinwinkelnäherung nicht mehr verwendet werden. Die Spurweite $g$ ergibt sich dann aus der Formel:
 
-        $$g = \frac{n \cdot \lambda}{\sin(\tan(\frac{a_{n}}{2 L}))}$$
+        \begin{equation}
+            g = \frac{n \cdot \lambda}{\sin(\tan(\frac{a_{n}}{2 L}))}
+        \end{equation}
 
     \subsection{Ergebnisse}
         
         \begin{table}[H]
             \centering
+            \caption{Messwerte Versuch 2}
+            \vspace*{1em}
             \begin{tabular}{|l|l|l|}
                 \hline
                 & Abstand $a_{n}$ & Abstand $L$\\
@@ -99,14 +116,18 @@
         
     \subsection{Ergebnisse}
 
-        Ist der Versuch richtig aufgebaut, sollten auf dem Schirm mehrere Streifen an Farben zu sehen sein: rot/orange, grün, blau und \glqq hellblau\grqq. Hellblau ist allerdings nur zu sehen, da die Wand, bzw. das Blatt Papier, welches als Schirm dient UV-Strahlen reflektiert und es dadurch sichtbar macht. Die anderen Farben sind die Spektrallinien der Gasentladungslampe. Die Wellenlängen der Spektrallinien lassen sich mit der Formel aus Versuch 1 bestimmen:
+        Ist der Versuch richtig aufgebaut, sollten auf dem Schirm mehrere Streifen an Farben zu sehen sein: rot/orange, grün, blau und \glqq hellblau\grqq. Hellblau ist allerdings nur zu sehen, da die Wand, bzw. das Blatt Papier, welches als Schirm dient UV-Strahlen fluoresziert und es dadurch sichtbar macht. Die anderen Farben sind die Spektrallinien der Gasentladungslampe. Die Wellenlängen der Spektrallinien lassen sich mit der Formel aus Versuch 1 bestimmen:
 
-        $$\lambda = \frac{a_{n} \cdot g}{2nL}$$
+        \begin{equation}
+            \lambda = \frac{a_{n} \cdot g}{2nL}
+        \end{equation}
 
         Die folgenden Werte sind die Messungen der Abstände $a_{n}$ zwischen den Beugungsmaxima der jeweiligen Farbe und der Abstand $L$ zwischen Gitter und Schirm. Die Ergebnisse sind in der letzten Spalte der Tabelle aufgelistet.
         
         \begin{table}[H]
             \centering
+            \caption{Messwerte Versuch 3}
+            \vspace*{1em}
             \begin{tabular}{|l|l|l|l|}
                 \hline
                 Farbe & Abstand $a_{\text{Farbe}}$ & Abstand $L$ & Wellenlänge $\lambda_{\text{Farbe}}$\\
@@ -126,6 +147,8 @@
 
         \begin{table}[H]
             \centering
+            \caption{Messwerte Versuch 3 im Vergleich mit Literaturwerten}
+            \vspace*{1em}
             \begin{tabular}{|l|l|l|l|}
                 \hline
                 Farbe & Wellenlänge (Spektrometer) & Wellenlänge (berechnet) & Wellenlänge (Literatur)\\
@@ -149,9 +172,11 @@
 
         Für den ersten Teil des Versuchs wird erneut ein ähnlicher Aufbau gewählt wie in Versuch 1. Allerdings wird diesmal kein optisches Gitter benutzt sondern ein Objekthalter, in welchem einmal 7 verschieden große Linien und einmal 7 verschieden große Spalten zu erkennen sind. Die Spalte und die Linien sind immer gleich groß. Die Frage die nun geklärt werden soll, ist, was sich ändert, wenn man den Laser durch die unterschiedlich großen Spalte scheint.
 
-        Für den zweiten Teil wird der gleiche Aufbau verwendet. Es soll die Breite des Spaltes, bzw. die Breite der Linie bestimmt werden und mit den Herstellerangaben verglichen werden. Dazu wird der Abstand $L$ zwischen Spalt und Schirm gemessen und die Abstände $a_{1}$ zwischen den Beugungsmaxima für die Spalt- bzw. Linienbreiten $40, 80$ und $150\ \mathrm{\mu m}$. Die Breite des Spaltes bzw. der Linie ergibt sich dann aus der Formel:
+        Für den zweiten Teil wird der gleiche Aufbau verwendet. Es soll die Breite des Spaltes, bzw. die Breite der Linie bestimmt werden und mit den Herstellerangaben verglichen werden. Dazu wird der Abstand $L$ zwischen Spalt und Schirm gemessen und die Abstände $a_{1}$ zwischen den Beugungsmaxima für die Spalt- bzw. Linienbreiten $40, 80$ und $150\ \mathrm{\mu m}$. Die Breite $b$ des Spaltes bzw. der Linie ergibt sich dann aus der Formel:
 
-        $$g = \frac{2 \lambda L}{a_{1}}$$
+        \begin{equation}
+            b = \frac{2 \lambda L}{a_{1}}
+        \end{equation}
 
         Zusätzlich soll die Frage geklärt werden, worin der Unterschied im Beugungsbild zwischen einem Spalt und einer Linie besteht.
     
@@ -165,9 +190,11 @@
 
         \begin{table}[H]
             \centering
+            \caption{Messwerte Versuch 4}
+            \vspace*{1em}
             \begin{tabular}{|l|l|l|l|}
                 \hline
-                Breite (Herstellerangabe) & Abstand $a_{1}$ & Abstand $L$ & Breite (berechnet)\\
+                Spaltbreite (Herstellerangabe) & Abstand $a_{1}$ & Abstand $L$ & Spaltbreite $b$ (berechnet)\\
                 \hline
                 $40\ \mathrm{\mu m}$ & $4,6 \pm 0,1\ \mathrm{cm}$ & $150 \pm 0,1\ \mathrm{cm}$ & $41,3\ \mathrm{\mu m}$\\
                 \hline
@@ -185,9 +212,11 @@
     \subsection{Versuchsaufbau und -durchführung}
         
         In diesem Versuch wird erneut ein ähnlicher Aufbau wie in Versuch 1 verwendet. Allerdings wird diesmal ein Haar anstatt eines optischen Gitters verwendet. Das Haar wird dabei senkrecht in ein Objekthalter gespannt und an die Stelle platziert, an der vorher der Laser stand.
-        Es soll nun anhand der Beugunsmaxima die Dicke des Haares bestimmt werden. Dazu wird der Abstand $L$ zwischen Haar und Schirm gemessen und der Abstand $a_{1}$. Die Dicke des Haares ergibt sich aus der Formel:
+        Es soll nun anhand der Beugunsmaxima die Dicke des Haares bestimmt werden. Dazu wird der Abstand $L$ zwischen Haar und Schirm gemessen und der Abstand $a_{1}$. Die Dicke $b$ des Haares ergibt sich aus der Formel:
 
-        $$g = \frac{2 \lambda L}{a_{1}}$$
+        \begin{equation}
+            b = \frac{2 \lambda L}{a_{1}}
+        \end{equation}
     
     \subsection{Ergebnisse}
 
@@ -197,14 +226,14 @@
             \centering
             \begin{tabular}{|l|l|l|}
                 \hline
-                Abstand $a_{1}$ & Abstand $L$ & Dicke (berechnet)\\
+                Abstand $a_{1}$ & Abstand $L$ & Haardicke $b$ (berechnet)\\
                 \hline
                 $2,3 \pm 0,1\ \mathrm{cm}$ & $150 \pm 0,1\ \mathrm{cm}$ & $82,5\ \mathrm{\mu m}$\\
                 \hline
             \end{tabular}
         \end{table}
 
-        Die berechnete Dicke des Haares stimmt mit online recherchierten Werten überein. Die Abweichung lässt sich auf die Ungenauigkeit des Messens mit dem Lineal zurückführen.
+        Die berechnete Dicke des Haares stimmt mit online recherchierten Werten überein (\url{https://de.wikipedia.org/wiki/Kopfhaar}). Die Abweichung lässt sich auf die Ungenauigkeit des Messens mit dem Lineal zurückführen.
 
 \section{Versuch 6 - Modellversuch zum Auflösungsvermögen des Mikroskops}
 
