@@ -184,12 +184,22 @@ Im Diagramm \ref{fig:wertev2} sieht man ganz gut das mit steigendem Widerstand d
     \subsection{Versuchsaufbau und -durchführung}
         
         In Versuch 3 wird mit einem Signalgenerator eine sinusförmige Wechselspannung mit $f = 40\ \mathrm{kHz}$ erzeugt. Diese soll mit dem Oszilloskop beobachtet werden. Anschließend soll eine Schirmskizze angefertigt werden und ausgewertet werden. Die Auswertung ist in Tabelle \ref{tab:versuch3} festgehalten. Als zweite Spannung wir eine rechteckförmige Wechselspannung mit $f = 2,5\ \mathrm{kHz}$ erzeugt. Die Auswertung ist ebenfalls in Tabelle \ref{tab:versuch3} festgehalten.
-        Abbildungen \ref{fig:versuch3_1} und \ref{fig:versuch3_2} zeigen die Schirmskizzen.
+        Abbildungen \ref{fig:versuch3sinus} und \ref{fig:versuch3eckig} zeigen die Schirmskizzen.
 
     \subsection{Ergebnisse}
 
-        TODO: Schirmskizzen
-
+       	\begin{center}
+       	\includegraphics[width=0.5\textwidth]{bilder/Sinus.png}
+       	\captionof{figure}{Aufbau Versuch 2}
+       	\label{fig:versuch3sinus}
+       \end{center}
+		Die Amplitude lässt sich leicht ablesen, da jedes Kästchen 2 Volt in Y-Richtung und 5 $\mu s$ in X -Richtung entspricht. Daraus folgt eine Amplitude von 6.2V und eine Periode von 25.0 $\mu s$
+	\begin{center}
+	\includegraphics[width=0.5\textwidth]{bilder/Eckig.png}
+	\captionof{figure}{Aufbau Versuch 2}
+	\label{fig:versuch3eckig}
+\end{center}
+Die Amplitude lässt sich leicht ablesen, da jedes Kästchen 1 Volt in Y-Richtung und 100 $\mu s$ in X -Richtung entspricht und. Daraus folgt eine Amplitude von 2.0V und eine Periode von 400.0 $\mu s$
         \begin{table}[h!]
             \centering
             \begin{tabular}{|l|l|l|l|}
@@ -204,7 +214,7 @@ Im Diagramm \ref{fig:wertev2} sieht man ganz gut das mit steigendem Widerstand d
             \caption{Auswertung für Versuch 3}
             \label{tab:versuch3}
         \end{table}
-
+\newpage
         Die Fehlerberechnung ergibt sich aus dem Größtfehler:
 
         \begin{equation}
@@ -214,7 +224,7 @@ Im Diagramm \ref{fig:wertev2} sieht man ganz gut das mit steigendem Widerstand d
 
         mit $\Delta \mathcal{T} = 1\ \mathrm{\mu s}$, bzw. $\Delta \mathcal{T} = 20\ \mathrm{\mu s}$. Die Amplitude besitzt einen Fehler von $0,4\ \mathrm{V}$, bzw. $0,2\ \mathrm{V}$. Der Fehler der Amplitude ist allerdings nicht für die Berechnung der Frequenz relevant.
 
-        TOD: Diskussion
+        Dies sind offensichtlich Fehlerbehaftete Größen. Für einen Fehler in X-Richtung von 0.4 V bei \ref{fig:versuch3sinus} und 0.2 V bei \ref{fig:versuch3eckig} haben wir uns entschieden dies die kleinste Ablesbare Einheit ist. Den Fehler für die Zeit haben wir analog dazu festgelegt. Der Fehler für die Frequenz wurde durch die Genauigkeit des Oszilloskops festgelegt.
 
 \section{Versuch 4: Ladeverhalten eines Kondensators}
 
