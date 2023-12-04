@@ -230,10 +230,41 @@ Die Amplitude lässt sich leicht ablesen, da jedes Kästchen 1 Volt in Y-Richtun
 
     \subsection{Versuchsaufbau und -durchführung}
 
-        TODO: Versuchsaufbau und -durchführung
-        Ohmscher Widerstand $R = 100\ \mathrm{\Omega}$
-
+        \begin{figure}[H]
+        	\begin{subfigure}{0.48\linewidth}
+        		\includegraphics[width=\linewidth]{bilder/versucha.png}
+        		\caption{Bild 1}
+        		\label{fig:bild1}
+        	\end{subfigure}
+        	\hfill
+        	\begin{subfigure}{0.48\linewidth}
+        		\includegraphics[width=\linewidth]{bilder/versuchb.png}
+        		\caption{Bild 2}
+        		\label{fig:bild2}
+        	\end{subfigure}
+        	\caption{Versuchsaufbau Versuch 4}
+        	\label{fig:zwei-bilder}
+        \end{figure}
+        Ohmscher Widerstand $R = 100\ \mathrm{\Omega}$ für sowohl den Aufbau \ref{fig:bild1} als auch \ref{fig:bild2}. Die Frequenz wird auf $f \approx 250Hz $ festgelegt
+\newpage
     \subsection{Ergebnisse}
+        Die entstehenden Schirmbilder sehen wie folgt aus:
+        
+        \begin{figure}[H]
+        	\begin{subfigure}{0.48\linewidth}
+        		\includegraphics[width=\linewidth]{bilder/teila.png}
+        		\caption{Schirmbild von Aufbau a)}
+        		\label{fig:biold4}
+        	\end{subfigure}
+        	\hfill
+        	\begin{subfigure}{0.48\linewidth}
+        		\includegraphics[width=\linewidth]{bilder/teilb.png}
+        		\caption{Schirmbild von Aufbau b)}
+        		\label{fig:bild3}
+        	\end{subfigure}
+        	\caption{Schirmbilder vom jeweiligen Aufbau}
+        	\label{fig:zwei-bilder-schirme}
+        \end{figure}
         
         \begin{table}[h!]
             \centering
@@ -251,9 +282,22 @@ Die Amplitude lässt sich leicht ablesen, da jedes Kästchen 1 Volt in Y-Richtun
         \begin{figure}[h!]
             \centering
             \includegraphics[width=0.5\textwidth]{bilder/Physik_05.png}
-            \caption{Schirmskizze für Versuch 4}
+            \caption{Ladekurve für Versuch 4 \\ \textcolor{red}{In Y-Richtung Spannung in Volt und in X-Richtung Zeit in ms}}
             \label{fig:versuch4}
         \end{figure}
 
-        TODO: Berechnung von $C$
-        TODO: Diskussion
+       Was bei den Schirmbildern in Figur \ref{fig:zwei-bilder-schirme} gleich auffällt ist, dass wenn man genau Hinschaut Bild b) das Komplement von Bild a) ist. Warum das so ist erklären wir gleich. 
+       
+       Wir möchten nun die Kapazität $C$ vom Kondensator berechnen. Dazu müssen wir folgende Annahmen treffen. Der Stromkreis ist verlustfrei, das heißt es geht nichts durch Wärme verloren. Dann gilt das Ohmsche Gesetz. Weiter können wir mit der Maschenregel $U_1,\ U_2,\ U_3$ berechnen. Denn entlang einer Masche ist die Summe der Spannungen Null. Das heißt $-U_1 + U_2 + U_3 = 0V  \Rightarrow U_2 + U_3 = U_1$. Anhand von der Maschenregel erklärt sich auch warum das Schirmbild \ref{fig:biold4} das Komplement zu Schirmbild \ref{fig:bild3} ist.
+       
+       Wir können nun die Stromstärke anhand von der Formel:
+       \begin{equation}
+       	I(t)=I_0e^{\frac{-t}{\tau}} \text{wobei für $\tau$ gilt: } \tau = R \cdot C
+       	\label{eq:kapazität}
+       \end{equation}
+       
+       \textcolor{red}{TODO: Messwerte eintragen und Formel nach C umstellen und berechnen. Vielleicht hast du noch ne Idee was man noch Begründen kann. Bin noch nicht ganz zufrieden.}
+       
+       
+       
+       
