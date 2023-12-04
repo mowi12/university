@@ -11,16 +11,16 @@
         Versuch 1 behandelt die Strom-Spannungs Kennlinien von Widerständen und Glühbirnen. Dazu wird der Versuchsaufbau aus Abbildung \ref{fig:versuch1} verwendet. Im ersten Teil des Versuch wird die Spannung und die Stromstärke an dem markierten Stellen gemessen und festgehalten. Im zweiten Teil des Versuchs wird die Glühbirne durch einen Ohmschen Widerstand ersetzt und die Messung wiederholt. Der Widerstand beträgt $R = 1\ \mathrm{k\Omega}$. Diese Messwerte werden ebenfalls festgehalten. In einem $U$ über $I$ Diagramm werden die Messwerte analysiert und die Steigung um den Spannungswert $U = 0\ \mathrm{V}$ bestimmt.
         Im letzten Teil wird für jedes Wertepaar die elektrische Leistung $P$ berechnet und in einem $R$ über $P$ Diagramm aufgetragen.
 
-        \begin{figure}[ht!]
+        \begin{figure}[H]
             \centering
             \includegraphics[width=0.5\textwidth]{bilder/Physik_01.png}
             \caption{Versuchsaufbau für Versuch 1}
             \label{fig:versuch1}
         \end{figure}
-\newpage
+
     \subsection{Ergebnisse}
 
-        \begin{table}[ht!]
+        \begin{table}[H]
             \centering
             \begin{tabular}{|l|l|l|l|}
                 \hline
@@ -59,7 +59,7 @@
             \label{tab:gluehbirne}
         \end{table}
 
-        \begin{table}[ht!]
+        \begin{table}[H]
             \centering
             \begin{tabular}{|l|l|l|l|}
                 \hline
@@ -98,57 +98,54 @@
             \label{tab:widerstand}
         \end{table}
 
-        \begin{figure}[ht!]
+        \begin{figure}[H]
             \centering
-            
             \includegraphics[width=0.5\textwidth]{bilder/Physik_02.png}
-            \caption{$U$ über $I$ Diagramm für Glühbirne (orange) und Widerstand (grau) \\ \textcolor{red}{Die X-Achse $\hat{=}$ Spannung in V und die Y-Achse $\hat{=}$ Stromstärke in A}}
+            \caption{$U$ über $I$ Diagramm für Glühbirne (orange) und Widerstand (grau)\\ \textcolor{red}{Die X-Achse $\hat{=}$ Spannung in V und die Y-Achse $\hat{=}$ Stromstärke in A}}
             \label{fig:wertev1}
         \end{figure}
-\newpage
-        \begin{figure}[ht!]
+
+        \begin{figure}[H]
             \centering
             \includegraphics[width=0.5\textwidth]{bilder/Physik_03.png}
-            \caption{$R$ über $P$ Diagramm für Glühbirne (orange) und Widerstand (blau) \\ \textcolor{red}{Die X-Achse $\hat{=}$ Leistung in mW und die Y-Achse $\hat{=}$ Widerstand in $\Omega$}}
+            \caption{$R$ über $P$ Diagramm für Glühbirne (orange) und Widerstand (blau)\\ \textcolor{red}{Die X-Achse $\hat{=}$ Leistung in mW und die Y-Achse $\hat{=}$ Widerstand in $\Omega$}}
             \label{fig:wertev2}
         \end{figure}
 
-      Die Steigung einer Gerade, hier von der Grauen aus dem Schaubild \ref{fig:wertev1}, lässt sich mithilfe der Formel \ref{eq:steigung} berechnen. Dabei entspricht die Steigung R dem Widerstand. $\Delta x$ entspricht der Spannung in Volt und $\Delta y$ der Stromstärke in Ampere. 
+        Die Steigung einer Gerade, hier von der Grauen aus dem Schaubild \ref{fig:wertev1}, lässt sich mithilfe der Formel \ref{eq:steigung} berechnen. Dabei entspricht die Steigung R dem Widerstand. $\Delta x$ entspricht der Spannung in Volt und $\Delta y$ der Stromstärke in Ampere. 
       
-     \begin{center}
-     	\begin{equation}
-      	\label{eq:steigung}
-      	R = \frac{\Delta y}{\Delta x}
-      \end{equation}
-     \end{center}
+        \begin{equation}
+            R = \frac{\Delta y}{\Delta x}
+            \label{eq:steigung}
+        \end{equation}
      
-     Wählt man nun geschickt $\Delta x= 5V$  $\Delta y=5A$ so erhält man den Widerstand $R = 1 \Omega$
+        Wählt man nun geschickt $\Delta x= 5V$  $\Delta y=5A$ so erhält man den Widerstand $R = 1 \Omega$
 
-    Man kann aus den Diagrammen so wie den berechneten und gemessenen Werten noch weitere Erkenntnisse ziehen. Zum einen sieht man das im Diagramm \ref{fig:wertev1} die steigende Spannung keinen Einfluss auf den Widerstand hat, während der Widerstand bei der Glühbirne steigt. Dies liegt daran, dass die Glühbirne sich stark erwärmt (Glühdraht) und wenn sich Metalle erwärmen die Atome in Schwingungen geraten was wiederum zu mehr Kollisionen der Elektronen zur Folge hat. Und da mehr Kollision = höhere Widerstand steigt der Widerstand der Glühbirne (Ohmsches Gesetz). 
-    
-    Beim Widerstand sollten sich die Werte nicht verändern. In Tabelle \ref{tab:widerstand} tut er es aber trotzdem. Dies kommt durch die Messfehler beim abnehmen der Werte zustande. 
+        Man kann aus den Diagrammen so wie den berechneten und gemessenen Werten noch weitere Erkenntnisse ziehen. Zum einen sieht man das im Diagramm \ref{fig:wertev1} die steigende Spannung keinen Einfluss auf den Widerstand hat, während der Widerstand bei der Glühbirne steigt. Dies liegt daran, dass die Glühbirne sich stark erwärmt (Glühdraht) und wenn sich Metalle erwärmen die Atome in Schwingungen geraten was wiederum zu mehr Kollisionen der Elektronen zur Folge hat. Und da mehr Kollision = höhere Widerstand steigt der Widerstand der Glühbirne (Ohmsches Gesetz). 
+        
+        Beim Widerstand sollten sich die Werte nicht verändern. In Tabelle \ref{tab:widerstand} tut er es aber trotzdem. Dies kommt durch die Messfehler beim abnehmen der Werte zustande. 
 
-Im Diagramm \ref{fig:wertev2} sieht man ganz gut das mit steigendem Widerstand die Glühbirne weniger Leistung verheizt wie der Widerstand mit konstantem Widerstand. Dies liegt daran, dass die Glühbirne mit steigender Spannung weniger Gesamtrom fließen hat.
+        Im Diagramm \ref{fig:wertev2} sieht man ganz gut das mit steigendem Widerstand die Glühbirne weniger Leistung verheizt wie der Widerstand mit konstantem Widerstand. Dies liegt daran, dass die Glühbirne mit steigender Spannung weniger Gesamtrom fließen hat.
+
 \section{Versuch 2: Schaltkreise mit Widerständen}
 
     \subsection{Versuchsaufbau und -durchführung}
 
         In Versuch 2 wird folgender Schaltkreis verwendet:
-\newpage
-			\begin{center}
-				 \includegraphics[width=0.5\textwidth]{bilder/Physik_04.png}
-				\captionof{figure}{Aufbau Versuch 2}
-				\label{fig:versuch2}
-			\end{center}
-           
 
-		\vspace{1em}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.5\textwidth]{bilder/Physik_04.png}
+            \caption{Aufbau Versuch 2}
+            \label{fig:versuch2}
+        \end{figure}
+           
         Zunächst wird eine Spannung $U_{\mathrm{ges}} = 5\ \mathrm{V}$ an die Schaltung angelegt. Nun werden die Teilspannung $U_{3}$ und der Teilstrom $I_{2}$ gemessen und anhand dieser Messungen die restlichen Werte berechnet. Die Messwerte werden in Tabelle \ref{tab:versuch2} festgehalten.
         Danach wird der Versuch wiederholt, jedoch wird die Spannung so gewählt, das eine Stromstärke von $I_{mathrm{ges}} = 10\ \mathrm{mA}$ fließt. Die Messwerte werden ebenfalls in Tabelle \ref{tab:versuch2} festgehalten.
 
     \subsection{Ergebnisse}
 
-        \begin{table}[h!]
+        \begin{table}[H]
             \centering
             \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|}
                 \hline
@@ -177,7 +174,6 @@ Im Diagramm \ref{fig:wertev2} sieht man ganz gut das mit steigendem Widerstand d
         Für den ersten Versuchsteil nehmen wir ebenfalls an das die Temperatur der Leiter konstant bleiben um das Ohmsche Gesetz anzuwenden. Auch hier wissen wir das $I_{ges}$ konstant bleibt. Daraus können wir mit $U_3$ und der Formel \ref{eq:widerstand} $R_3$ berechnen. Da sich Spannung in einer Parallelschaltung gleichmäßig aufteilt können wir wieder leicht $U_1$ und $U_2$ bestimmen. Und mit $I_2$ dann auch leicht $I_1$. 
         
         Diese Messungen sind natürlich auch fehlerbehaftet da unsere Geräte Temperaturschwankungen unterlegen sind. Allerdings sind die Meßfehler hier zu vernachlässigen.
-        \newpage
 
 \section{Versuch 3: Wechselspannung und Oszilloskop}
 
@@ -188,19 +184,25 @@ Im Diagramm \ref{fig:wertev2} sieht man ganz gut das mit steigendem Widerstand d
 
     \subsection{Ergebnisse}
 
-       	\begin{center}
-       	\includegraphics[width=0.5\textwidth]{bilder/Sinus.png}
-       	\captionof{figure}{Aufbau Versuch 2}
-       	\label{fig:versuch3sinus}
-       \end{center}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.5\textwidth]{bilder/Sinus.png}
+            \caption{Schirmskizze 1}
+       	    \label{fig:versuch3sinus}
+        \end{figure}
+    
 		Die Amplitude lässt sich leicht ablesen, da jedes Kästchen 2 Volt in Y-Richtung und 5 $\mu s$ in X -Richtung entspricht. Daraus folgt eine Amplitude von 6.2V und eine Periode von 25.0 $\mu s$
-	\begin{center}
-	\includegraphics[width=0.5\textwidth]{bilder/Eckig.png}
-	\captionof{figure}{Aufbau Versuch 2}
-	\label{fig:versuch3eckig}
-\end{center}
-Die Amplitude lässt sich leicht ablesen, da jedes Kästchen 1 Volt in Y-Richtung und 100 $\mu s$ in X -Richtung entspricht und. Daraus folgt eine Amplitude von 2.0V und eine Periode von 400.0 $\mu s$
-        \begin{table}[h!]
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.5\textwidth]{bilder/Eckig.png}
+	        \caption{Schirmskizze 2}
+	        \label{fig:versuch3eckig}            
+        \end{figure}
+
+        Die Amplitude lässt sich leicht ablesen, da jedes Kästchen 1 Volt in Y-Richtung und 100 $\mu s$ in X -Richtung entspricht und. Daraus folgt eine Amplitude von 2.0V und eine Periode von 400.0 $\mu s$
+        
+        \begin{table}[H]
             \centering
             \begin{tabular}{|l|l|l|l|}
                 \hline
@@ -214,7 +216,7 @@ Die Amplitude lässt sich leicht ablesen, da jedes Kästchen 1 Volt in Y-Richtun
             \caption{Auswertung für Versuch 3}
             \label{tab:versuch3}
         \end{table}
-\newpage
+
         Die Fehlerberechnung ergibt sich aus dem Größtfehler:
 
         \begin{equation}
@@ -245,12 +247,15 @@ Die Amplitude lässt sich leicht ablesen, da jedes Kästchen 1 Volt in Y-Richtun
         	\caption{Versuchsaufbau Versuch 4}
         	\label{fig:zwei-bilder}
         \end{figure}
+
         Ohmscher Widerstand $R = 100\ \mathrm{\Omega}$ für sowohl den Aufbau \ref{fig:bild1} als auch \ref{fig:bild2}. Die Frequenz wird auf $f \approx 250Hz $ festgelegt
-\newpage
+
     \subsection{Ergebnisse}
+        
         Die entstehenden Schirmbilder sehen wie folgt aus:
         
         \begin{figure}[H]
+            \centering
         	\begin{subfigure}{0.48\linewidth}
         		\includegraphics[width=\linewidth]{bilder/teila.png}
         		\caption{Schirmbild von Aufbau a)}
@@ -266,7 +271,7 @@ Die Amplitude lässt sich leicht ablesen, da jedes Kästchen 1 Volt in Y-Richtun
         	\label{fig:zwei-bilder-schirme}
         \end{figure}
         
-        \begin{table}[h!]
+        \begin{table}[H]
             \centering
             \begin{tabular}{|l|l|l|l|}
                 \hline
@@ -293,20 +298,37 @@ Die Amplitude lässt sich leicht ablesen, da jedes Kästchen 1 Volt in Y-Richtun
             \label{tab:versuch4}
         \end{table}
 
-        \begin{figure}[h!]
+        \begin{figure}[H]
             \centering
             \includegraphics[width=0.5\textwidth]{bilder/Physik_05.png}
-            \caption{Ladekurve für Versuch 4 \\ \textcolor{red}{In Y-Richtung Spannung in Volt und in X-Richtung Zeit in ms}}
+            \caption{Ladekurve für Versuch 4\\ \textcolor{red}{In Y-Richtung Spannung in Volt und in X-Richtung Zeit in ms}}
             \label{fig:versuch4}
         \end{figure}
 
-       Was bei den Schirmbildern in Figur \ref{fig:zwei-bilder-schirme} gleich auffällt ist, dass wenn man genau Hinschaut Bild b) das Komplement von Bild a) ist. Warum das so ist erklären wir gleich. 
+        Was bei den Schirmbildern in Figur \ref{fig:zwei-bilder-schirme} gleich auffällt ist, dass wenn man genau Hinschaut Bild b) das Komplement von Bild a) ist. Warum das so ist erklären wir gleich. 
        
-       Wir möchten nun die Kapazität $C$ vom Kondensator berechnen. Dazu müssen wir folgende Annahmen treffen. Der Stromkreis ist verlustfrei, das heißt es geht nichts durch Wärme verloren. Dann gilt das Ohmsche Gesetz. Weiter können wir mit der Maschenregel $U_1,\ U_2,\ U_3$ berechnen. Denn entlang einer Masche ist die Summe der Spannungen Null. Das heißt $-U_1 + U_2 + U_3 = 0V  \Rightarrow U_2 + U_3 = U_1$. Anhand von der Maschenregel erklärt sich auch warum das Schirmbild \ref{fig:biold4} das Komplement zu Schirmbild \ref{fig:bild3} ist.
-       
-       Wir können nun die Stromstärke anhand von der Formel:
+        Wir möchten nun die Kapazität $C$ vom Kondensator berechnen. Dazu müssen wir folgende Annahmen treffen. Der Stromkreis ist verlustfrei, das heißt es geht nichts durch Wärme verloren. Dann gilt das Ohmsche Gesetz. Weiter können wir mit der Maschenregel $U_1,\ U_2,\ U_3$ berechnen. Denn entlang einer Masche ist die Summe der Spannungen Null. Das heißt $-U_1 + U_2 + U_3 = 0V  \Rightarrow U_2 + U_3 = U_1$. Anhand von der Maschenregel erklärt sich auch warum das Schirmbild \ref{fig:biold4} das Komplement zu Schirmbild \ref{fig:bild3} ist.
 
-       \begin{equation}
-       	I(t)=I_0e^{\frac{-t}{\tau}} \text{wobei für $\tau$ gilt: } \tau = R \cdot C
-       	\label{eq:kapazität}
-       \end{equation}
+        Die Kapazität des Kondensators lässt sich nun wie folgt mit den beiden Gleichungen
+
+        \begin{equation}
+            I(t) = I_{0} e^{\frac{-t}{\tau}}
+            \label{eq:eq1}
+        \end{equation}
+
+        und
+
+        \begin{equation}
+            \tau = R \cdot C
+            \label{eq:eq2}
+        \end{equation}
+
+        berechnen.
+
+        Aus Abbildung \ref{fig:versuch4} und Gleichung \ref{eq:eq1} lässt sich die Zeitkonstante $\tau$ ablesen. Diese beträgt $\tau = \frac{1}{17,81} = 0,0561$. Stellt man nun die Gleichung \ref{eq:eq2} nach $C$ um und setzt für $\tau$ und $R$ die Werte ein, so erhalten wir die Kapazität des Kondensators:
+
+        \begin{equation}
+            C = \frac{\tau}{R} = \frac{0,0561}{100} = 0,000561\ \mathrm{F} = 561\ \mathrm{\mu F}
+        \end{equation}
+
+        Da kein Richtwert, bzw. kein Wert für die tatsächliche Kapazität des Kondensators gegeben ist, können wir keine Aussage über die Genauigkeit der Messung treffen. Allerdings befinden sich bei jeder Messung leichte Fehler, da die Messgeräte nicht perfekt sind und die meisten Werte gerundet werden. Außerdem ist die Temperatur der Leiter nicht konstant, was zu einer Veränderung des Widerstandes führt. Dieser Effekt sollte allerdings sehr gering sein.
