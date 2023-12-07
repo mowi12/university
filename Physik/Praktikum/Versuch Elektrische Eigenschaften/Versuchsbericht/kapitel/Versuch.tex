@@ -22,6 +22,7 @@
 
         \begin{table}[H]
             \centering
+            \caption{Messwerte für die Glühbirne}
             \begin{tabular}{|l|l|l|l|}
                 \hline
                 $U$ in $\mathrm{V}$ & $I$ in $\mathrm{mA}$ & $R$ in $\mathrm{\Omega}$ & $P$ in $\mathrm{mW}$\\
@@ -55,12 +56,12 @@
                 $20,00$ & $15,50$ & $1290,32$ & $310$\\
                 \hline
             \end{tabular}
-            \caption{Messwerte für die Glühbirne}
             \label{tab:gluehbirne}
         \end{table}
 
         \begin{table}[H]
             \centering
+            \caption{Messwerte für den Widerstand}
             \begin{tabular}{|l|l|l|l|}
                 \hline
                 $U$ in $\mathrm{V}$ & $I$ in $\mathrm{mA}$ & $R$ in $\mathrm{\Omega}$ & $P$ in $\mathrm{mW}$\\
@@ -94,8 +95,7 @@
                 $20,00$ & $19,70$ & $1015,23$ & $394,0$\\
                 \hline
             \end{tabular}
-            \caption{Messwerte für den Widerstand}
-            \label{tab:widerstand}
+                        \label{tab:widerstand}
         \end{table}
 
         \begin{figure}[H]
@@ -141,12 +141,13 @@
         \end{figure}
            
         Zunächst wird eine Spannung $U_{\mathrm{ges}} = 5\ \mathrm{V}$ an die Schaltung angelegt. Nun werden die Teilspannung $U_{3}$ und der Teilstrom $I_{2}$ gemessen und anhand dieser Messungen die restlichen Werte berechnet. Die Messwerte werden in Tabelle \ref{tab:versuch2} festgehalten.
-        Danach wird der Versuch wiederholt, jedoch wird die Spannung so gewählt, das eine Stromstärke von $I_{mathrm{ges}} = 10\ \mathrm{mA}$ fließt. Die Messwerte werden ebenfalls in Tabelle \ref{tab:versuch2} festgehalten.
+        Danach wird der Versuch wiederholt, jedoch wird die Spannung so gewählt, das eine Stromstärke von $I_{\mathrm{ges}} = 10\ \mathrm{mA}$ fließt. Die Messwerte werden ebenfalls in Tabelle \ref{tab:versuch2} festgehalten.
 
     \subsection{Ergebnisse}
 
         \begin{table}[H]
             \centering
+            \caption{Messwerte für Versuch 2}
             \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|}
                 \hline
                 $I_{\mathrm{ges}}$ in $\mathrm{mA}$ & $I_{1}$ in $\mathrm{mA}$ & $I_{2}$ in $\mathrm{mA}$ & $I_{3}$ in $\mathrm{mA}$ & $U_{\mathrm{ges}}$ in $\mathrm{V}$ & $U_{1}$ in $\mathrm{V}$ & $U_{2}$ in $\mathrm{V}$ & $U_{3}$ in $\mathrm{V}$ & $R_{1}$ in $\mathrm{\Omega}$ & $R_{2}$ in $\mathrm{\Omega}$ & $R_{3}$ in $\mathrm{\Omega}$\\
@@ -156,7 +157,6 @@
                 $10,00$ & $6,10$ & $3,90$ & $10,00$ & $13,40$ & $1,63$ & $1,63$ & $10,14$ & $267,21$ & $417,95$ & $1014,00$\\
                 \hline
             \end{tabular}
-            \caption{Messwerte für Versuch 2}
             \label{tab:versuch2}
         \end{table}
 
@@ -204,6 +204,7 @@
         
         \begin{table}[H]
             \centering
+            \caption{Auswertung für Versuch 3}
             \begin{tabular}{|l|l|l|l|}
                 \hline
                 $f_{\mathrm{geg}}$ in $\mathrm{kHz}$ & Amplitude in $\mathrm{V}$ & Periode $T$ in $\mathrm{\mu s}$ & Frequenz $f$ in $\mathrm{kHz}$\\
@@ -213,7 +214,6 @@
                 $2,5$ & $2,0 \pm 0,2$ & $400,0 \pm 20,0$ & $2,5 \pm 0,125$\\
                 \hline
             \end{tabular}
-            \caption{Auswertung für Versuch 3}
             \label{tab:versuch3}
         \end{table}
 
@@ -273,6 +273,7 @@
         
         \begin{table}[H]
             \centering
+            \caption{Messwerte für Versuch 4}
             \begin{tabular}{|l|l|l|l|}
                 \hline
                 $n$ & Zeit $t$ in $\mathrm{ms}$ & Amplitude in $V$ & $I$ in $A$\\
@@ -294,7 +295,6 @@
                 $8$ & $0,173$ & $0,32$ & $0,0032$\\
                 \hline
             \end{tabular}
-            \caption{Messwerte für Versuch 4}
             \label{tab:versuch4}
         \end{table}
 
@@ -325,7 +325,7 @@
 
         berechnen.
 
-        Aus Abbildung \ref{fig:versuch4} und Gleichung \ref{eq:eq1} lässt sich die Zeitkonstante $\tau$ ablesen. Diese beträgt $\tau = \frac{1}{17,81} = 0,0561$. Stellt man nun die Gleichung \ref{eq:eq2} nach $C$ um und setzt für $\tau$ und $R$ die Werte ein, so erhalten wir die Kapazität des Kondensators:
+        Aus Abbildung \ref{fig:versuch4} und Gleichung \ref{eq:eq1} lässt sich die Zeitkonstante $\tau$ ablesen. Diese beträgt $\tau = \frac{1}{17,81} = 0,000561$. Stellt man nun die Gleichung \ref{eq:eq2} nach $C$ um und setzt für $\tau$ und $R$ die Werte ein, so erhalten wir die Kapazität des Kondensators:
 
         \begin{equation}
             C = \frac{\tau}{R} = \frac{0,0561}{100} = 0,000561\ \mathrm{F} = 561\ \mathrm{\mu F}
