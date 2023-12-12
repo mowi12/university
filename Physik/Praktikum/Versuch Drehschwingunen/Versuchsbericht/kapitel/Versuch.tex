@@ -169,7 +169,6 @@
 
             Da die finalen Ergebnisse von $\beta_{1}$ und $\beta_{2}$ sehr nah beieinander liegen, kann davon ausgegangen werden, dass die Messung recht genau war. Die Werte für $\beta$ im Vergleich zwischen $2\ \mathrm{V}$ und $4\ \mathrm{V}$ sind ebenfalls plausibel. Die Dämpfung ist bei $4\ \mathrm{V}$ größer, was auch zu erwarten war. Allerdings sollte $\beta_{1}$ genauer sein, da dieser alle Messwerte beinhalten und nicht nur zwei.
 
-\newpage
 
 \section{Versuch 2: Computersimulation}
 
@@ -191,6 +190,56 @@
             
             Die dargestellte Simulation in \ref{fig:plots_v2} wurde 2 mal durchgeführt. Einmal mit einer hohen Dämpfungskonstanten in \textcolor{red}{Rot} und das andere mal mit einer niedrigen Dämpfungskonstanten in \textcolor{blue}{Blau}. Die Dämpfungskonstante kann in der Applikation eingestellt werden. Nun sieht man schnell das in bei einer niedrigen Dämpfungskonstanten die Amplitude deutlich größer ist wie bei einer großen Dämpfungskonstanten. Dies liegt daran das bei einer großen Dämpfungskonstanten die Energie schneller abgebaut wird und somit die Amplitude kleiner ist.Im Phasendiagramm (rechts in \ref{fig:plots_v2}) erkennt man auch hier das die Steigung der Phase deutlich flacher ist wenn die Dämpfungskonstante größer ist. Dies liegt daran das die Phase bei einer großen Dämpfungskonstante schneller abgebaut wird.
 
+            Nun können wir mit Hilfe der gegegeben Federkonstante $D$ die Masse des simulierten Federpendels bestimmen.
+
+            Dazu benötigen wir folgende Formel:
+            \begin{equation}
+                x_{0,max}=\frac{\frac{F_0}{m}}{2\beta\omega_0}
+                \label{eq:Amplitude}
+            \end{equation}
+
+            sowie:
+            \begin{equation}
+                \omega_{res}=\sqrt{\omega_0^2-2\beta^2}
+                \label{eq:Resonanzfrequenz}
+            \end{equation}
+            Wobei $\omega_{res}$ die Resonanzfrequenz, $\omega_0$ die Eigenfrequenz, $\beta$ die Dämpungskonstante und $x_{0,max}$ die maximale Amplitude ist. 
+
+            Nun können wir Anhand der Eigenfrequenz, die Resonanzfrequenz bestimmen. Dazu stellen wir \ref{eq:Resonanzfrequenz} nach $\omega_{0}$ um und erhalten:
+            \begin{equation}
+                \omega_{0}=\sqrt{\omega_{res}^2+2\beta^2}
+                \label{eq:Eigenfrequenz}
+            \end{equation}
+
+            Die Formel können wir nun in \ref{eq:Amplitude} einsetzen und erhalten:
+            \begin{equation}
+                x_{0,max}=\frac{\frac{F_0}{m}}{2\beta\sqrt{\omega_{res}^2+2\beta^2}}
+                \label{eq:Amplitude2}
+            \end{equation}
+
+            Nun stellen wir \ref{eq:Amplitude2} nach $m$ um und erhalten:
+            \begin{equation}
+                m=\frac{\frac{F_0}{x_{0,max}}}{2\beta\sqrt{\omega_{res}^2+2\beta^2}}
+                \label{eq:Mass}
+            \end{equation}
+
+            Die Resonanzfrequenz $\omega_{res}$ lässt sich aus dem Schaubild \ref{fig:plots_v2} ablesen und beträgt etwa 2,3 Hz. Als $F_0$ wird die Federkraft zur Auslenkung $x_0$ beschrieben:
+
+            \begin{equation}
+                F_0=D\cdot x_0
+                \label{eq:Federkraft}
+            \end{equation} nun setzen wir dies in \ref{eq:Mass} ein und erhalten:
+            \begin{equation}
+                m=\frac{\frac{D\cdot x_0}{x_{0,max}}}{2\beta\sqrt{\omega_{res}^2+2\beta^2}}
+                \label{eq:Mass2}
+            \end{equation}
+            Wir wählen $x_0$ nun so das es der maximalen Amplitude entspricht. Dann kürzt es sich aus der Formel und wir erhalten:
+            \begin{equation}
+                m=\frac{D}{2\beta\sqrt{\omega_{res}^2+2\beta^2}}
+                \label{eq:Mass3}
+            \end{equation}
+
+            \textcolor{red}{TODO Werte rausfinden und einsetzen}
         \subsubsection{Teil 2: Infrarotspektroskopie}
         
             Im zweiten Teil wird der Zusammenhang zwischen Infrarotspektroskopie und Molekülschwingungen dargestellt. Das folgende Diagramm \ref{fig:diagram_v2} stellt die verschiedenen Ausschläge bei verschiedenen Wellenzahlen dar.
