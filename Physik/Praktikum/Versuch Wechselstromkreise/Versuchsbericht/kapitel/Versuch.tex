@@ -1,148 +1,314 @@
 \chapter*{3 Versuchsdurchführung und Auswertung}
-\addcontentsline{toc}{chapter}{3 Versuchsdurchführung und Auswertung}
-\setcounter{chapter}{3}
+\addcontentsline{toc}{chapter}{2 Versuchsdurchführung und Auswertung}
+\setcounter{chapter}{2}
 \setcounter{section}{0}
 \setcounter{subsection}{0}
-\vspace{-2em}
+
 \section{Versuch 1 - Signaldarstellung mit dem Analog-Oszilloskop}
-\vspace{-1em}
+
     \subsection{Versuchsaufbau und -durchführung}
-    Zunächst wurde uns ein Signal vom Betreuer vorgegeben, welches wir mit dem Oszilloskop untersuchen sollten. Diese ist für uns von unbekannter Form, Frequenz und Amplitude. Wir haben uns dann für folgende Einstellung am Oszilloskop entschieden:
-   
-    Time/Div: 5$\mu$s 
-    Volt/Div: 0.5 V
-   
-    $\Rightarrow$ Die Amplitude $U_0$ des Signals ist 1.2 V und die Periodendauer 45 $\mu$s. Die Frequenz des Signals ist dann:
-    \vspace{-0.5em}
-    \begin{equation}
-        f = \frac{1}{T} = \frac{1}{45\mu s} = 21.7 kHz
-        \label{eq:Versuch1_Frequenz}
-    \end{equation}
-    \vspace{-0.5em}
-    Das Schirmbild sah wie folgt aus:
-    \begin{figure}[H]
-        \centering
-        \caption{Schirmbild des vorgegebenen Signals}
-        \includegraphics[width=0.8\textwidth]{bilder/Versuch_1.png}
-        \label{fig:Versuch1_Schirmbild}
-    \end{figure}
-
-    Nun können wir folgende Messwerte ablesen:
-    \begin{table}[H]
-        \centering
-        \caption{Messwerte des vorgegebenen Signals}
-        \vspace{0.5em}
-        \begin{tabular}{|c|c|}
-            \hline
-            \textbf{Größe} & \textbf{Wert} \\
-            \hline
-            Amplitude $U_0$ & 1.2 V $\pm$ 0.5 V \\
-            \hline
-            Frequenz & 21.7 kHz $\pm$ 0.1 kHz\\
-            \hline
-            Periodendauer & 45 $\mu$s $\pm$ 5 $\mu$s \\
-            \hline
-        \end{tabular}
-        
-        \label{tab:Versuch1_Messwerte}
-    \end{table}
     
-    Wir können nun mit folgender Formel die Frequenz des Signals berechnen:
-
-    \begin{equation}
-        f = \frac{1}{T}
-        \label{eq:Versuch1_Frequenz}
-    \end{equation}
-
-    Und den Größtfehler mit folgender Formel berechnen:
-
-    \begin{equation}
-        \begin{aligned}
-            \Delta f = \left |\frac{1}{T^2} \right | \cdot \Delta T \\
-            \Rightarrow f^2 \cdot \Delta T
-        \label{eq:Versuch1_Frequenz_Fehler}
-        \end{aligned}
-    \end{equation}
+        Im ersten Versuch sollten wir uns mit den Analog-Oszilloskop vertraut machen.Der Betreuer gibt uns ein Signal vor, welches wir mit dem Analog-Oszilloskop untersuchen sollten. Es sollen die Einstellungen am Oszilloskop, Charakteristika des Signals und eine Skizze des Signal notiert werden. Es soll außerdem der Größtfehler berechnet werden.
         
-    Der Größtfehler der Frequenz beträgt nach \ref{eq:Versuch1_Frequenz_Fehler} 0.1 kHz. Die Frequenz des Signals beträgt also 21.7 kHz $\pm$ 0.1 kHz. \textcolor{red}{TODO: REchnung prüfen}
-    
     \subsection{Ergebnisse}
-    \textcolor{red}{TODO}
 
+        Um das Signal gut auf dem Bildschirm erkennen zu können, haben wir uns für folgende Einstellung am Oszilloskop entschieden:
+   
+        \begin{itemize}
+            \item Time/Div: $5\ \mathrm{\mu s}$
+            \item Volt/Div: $0.5\ \mathrm{V}$
+        \end{itemize}
 
+        Das Schirmbild sieht wie folgt aus:
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.6\textwidth]{bilder/Versuch_1.png}
+            \caption{Schirmbild des vorgegebenen Signals}
+            \label{fig:Versuch1_Schirmbild}
+        \end{figure}
+
+        Die folgenden Werte können nun aus der Graphik \ref{fig:Versuch1_Schirmbild} abgelesen werden:
+
+        \begin{table}[H]
+            \centering
+            \caption{Messwerte des vorgegebenen Signals}
+            \vspace*{1em}
+            \begin{tabular}{|l|l|}
+                \hline
+                \textbf{Größe} & \textbf{Wert}\\
+                \hline
+                \hline
+                Amplitude $U_0$ & $1.2 \pm 0.5\ \mathrm{V}$\\
+                \hline
+                Periodendauer $T$ & $45 \pm 5 \mathrm{\mu s}$\\
+                \hline
+            \end{tabular}
+            
+            \label{tab:Versuch1_Messwerte}
+        \end{table}
+        
+        Die Frequenz $f$ des Signals berechnet sich dann wie folgt:
+
+        \begin{equation}
+            \begin{aligned}
+                f &= \frac{1}{T}\\
+                  &= \frac{1}{45\ \mathrm{\mu s}}\\
+                  &= 21.7\ \mathrm{kHz}
+            \end{aligned}
+            \label{eq:Versuch1_Frequenz}
+        \end{equation}
+
+        Der Größtfehler der Frequenz berechnet sich wie folgt:
+
+        \begin{equation}
+            \begin{aligned}
+                \Delta f &= \left|\frac{1}{T^{2}}\right| \cdot \Delta T\\
+                         &= \frac{1}{(45\ \mathrm{\mu s})^{2}} \cdot 5\ \mathrm{\mu s}\\
+                         &= 0.1\ \mathrm{kHz}
+            \label{eq:Versuch1_Frequenz_Fehler}
+            \end{aligned}
+        \end{equation}
+            
+        Der Größtfehler der Frequenz beträgt nach \ref{eq:Versuch1_Frequenz_Fehler} $0.1\ \mathrm{kHz}$. Die Frequenz des Signals beträgt also $21.7 \pm 0.1\ \mathrm{kHz}$.
+    
+    \subsection{Diskussion}
+
+        \textcolor{red}{TODO: Diskussion}
+    
 \section{Versuch 2 - Impedanzmessung an Widerstand, Kondensator und Spule}
     
     \subsection{Versuchsaufbau und -durchführung}
-    \begin{figure}[H]
-        \centering
-        \caption{Schaltbild Versuch 2}
-        \includegraphics[width=\textwidth]{bilder/Versuch2_Aufbau.png}
-        \label{fig:Versuch2_Schaltbild}
-    \end{figure}
+        
+        In Versuch 2 sollen wir die im Stromkreis \ref{fig:Versuch2_Schaltbild} angegebenen Bauteile messen und bestimmen. Aus der Kombination von bekanntem Widerstand $R_{\mathrm{m}}$ und unbekanntem Zweipol $Z$ lässt sich mit verschiedenen Werten der Widerstand und andere Eigenschaften des unbekannten Zweipols bestimmen. Für den unbekannten Zweipol werden die verschiedenen Bauteile, Widerstand, Kondensator und Spule eingegesetzt.
 
-    \textcolor{red}{TODO: Fehler mit angeben. Skala war 200mV/Div}
-    Nun lässt sich aus dem Aufbau \ref{fig:Versuch2_Schaltbild} noch der Widerstand Z berechnen. Da gilt: 
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\textwidth]{bilder/Versuch2_Aufbau.png}
+            \caption{Schaltbild des Versuchsaufbaus}
+            \label{fig:Versuch2_Schaltbild}
+        \end{figure}
 
-    \begin{equation}
-        \begin{aligned}
-            \frac{U_m}{U_z} = \frac{R_m}{|Z|} \\
-            \Rightarrow |Z| = \frac{U_z}{U_m} \cdot R_m
-            \label{eq:Versuch2_Impedanz}
-        \end{aligned}
-    \end{equation}
-    |Z| ist nach \ref{eq:Versuch2_Impedanz} 99.82 $\Omega$. Der Größtfehler beträgt:
-    \begin{equation}
-        \begin{aligned}
-            \Delta |Z| = \left |\frac{R_mU_z}{U_m} \right | \cdot \Delta U_m + \left |\frac{R_m}{U_m} \right | \cdot \Delta U_z \\
-            \label{eq:Versuch2_Impedanz_Fehler}
-        \end{aligned}
-    \end{equation}
     \subsection{Ergebnisse}
 
+        \subsubsection{Widerstand}
+
+            \begin{table}[H]
+                \centering
+                \caption{Messwerte des Widerstands}
+                \vspace{1em}
+                \begin{tabular}{|l|l|l|}
+                    \hline
+                    $U_m$ in $\mathrm{mV}$ & $U_z$ in $\mathrm{mV}$ & $R_{m}$ in $\Omega$\\
+                    \hline
+                    \hline
+                    $460 \pm 40$ & $560 \pm 40$ & $82$\\
+                    \hline
+                \end{tabular}
+                \label{tab:Versuch2_Widerstand}
+            \end{table}
+
+            Mit diesen Werten und folgender Formel lässt sich nun der Widerstand $R_{\mathrm{z}} = |Z|$ des unbekannten Zweipols berechnen:
+
+            \begin{equation}
+                \frac{U_{\mathrm{m}}}{U_{\mathrm{z}}} = \frac{R_{\mathrm{m}}}{|Z|}
+                \label{eq:Versuch2_Widerstand_Formel}
+            \end{equation}
+            
+            \begin{equation}
+                \begin{aligned}
+                    R_{\mathrm{z}} = |Z| &= \frac{U_{\mathrm{z}}}{U_{\mathrm{m}}} \cdot R_{\mathrm{m}}\\
+                                   &= \frac{560\ \mathrm{mV}}{460\ \mathrm{mV}} \cdot 82\ \mathrm{\Omega}\\
+                                   &= 99.83\ \mathrm{\Omega}
+                \end{aligned}
+                \label{eq:Versuch2_Widerstand}
+            \end{equation}
+
+            Der Größtfehler beträgt:
+
+            \begin{equation}
+                \begin{aligned}
+                    \Delta |Z| &= \left|\frac{R_{m} U_{z}}{U_{m}} \right| \cdot \Delta U_{m} + \left|\frac{R_{m}}{U_{m}} \right| \cdot \Delta U_{z}\\
+                               &= \left|\frac{82\ \mathrm{\Omega} \cdot 560\ \mathrm{mV}}{460\ \mathrm{mV}} \right| \cdot 40\ \mathrm{mV} + \left|\frac{82\ \mathrm{\Omega}}{460\ \mathrm{mV}} \right| \cdot 40\ \mathrm{mV}\\
+                               &= 19.13\ \mathrm{\Omega}
+                \end{aligned}
+                \label{eq:Versuch2_Widerstand_Fehler}
+            \end{equation}
+
+        \subsubsection{Kondensator}
+            
+            Als nächstes wird das unbekannte Bauteil durch einen Kondensator ersetzt. Die Messwerte befinden sich in folgender Tabelle:
+
+            \begin{table}[H]
+                \centering
+                \caption{Messwerte des Kondensators}
+                \vspace{1em}
+                \begin{tabular}{|l|l|l|l|}
+                    \hline
+                    $U_{\mathrm{m}}$ in $\mathrm{V}$ & $U_{\mathrm{z}}$ in $\mathrm{V}$ & $R_{\mathrm{m}}$ in $\mathrm{\Omega}$ & $T_{\mathrm{z}}$ in $\mathrm{\mu s}$\\
+                    \hline
+                    \hline
+                    $0.9\ \mathrm{V}$ & $0.38\ \mathrm{V}$ & $82\ \mathrm{\Omega}$ & $1000\ \mathrm{\mu s}$\\
+                    \hline
+                \end{tabular}
+                \label{tab:Versuch2_Kondensator}
+            \end{table}
+
+            Mit diesen Werten lassen sich nun die Kapazität und die Phasenverschiebung bestimmen.
+            
+            Zunächst bestimmen wir die Frequenz $f$ des Signals:
+
+            \begin{equation}
+                \begin{aligned}
+                    f &= \frac{1}{T_{\mathrm{z}}}\\
+                      &= \frac{1}{1000\ \mathrm{\mu s}}\\
+                      &= 1000\ \mathrm{Hz}
+                \end{aligned}
+                \label{eq:Versuch2_Kondensator_Frequenz}
+            \end{equation}
+
+            Danach berechnen wir die Winkelgeschwindigkeit $\omega$:
+
+            \begin{equation}
+                \begin{aligned}
+                    \omega &= 2 \pi f\\
+                           &= 2 \pi \cdot 1000\ \mathrm{Hz}\\
+                           &= 6283.19\ \mathrm{Hz}
+                \end{aligned}
+                \label{eq:Versuch2_Kondensator_Winkelgeschwindigkeit}
+            \end{equation}
+
+            Damit können wir abschließend die Kapzität $C$ des Kondensators berechnen:
+
+            \begin{equation}
+                \begin{aligned}
+                    C &= \frac{1}{\omega \cdot |Z|}\\
+                      &= \frac{1}{6283.19\ \mathrm{Hz} \cdot 82\ \mathrm{\Omega}}\\
+                      &= 4.6 \cdot 10^{-6}\ \mathrm{F}
+                \end{aligned}
+                \label{eq:Versuch2_Kondensator_Kapazität}
+            \end{equation}
+
+            Anschließend können wir die Phasenverschiebung $\varphi$ berechnen:
+
+            \begin{equation}
+                \begin{aligned}
+                    \varphi &= \frac{t}{T} \cdot 360^{\circ}\\
+                         &= \frac{-250\ \mathrm{\mu s}}{1000\ \mathrm{\mu s}} \cdot 360^{\circ}\\
+                         &= -90^{\circ}
+                \end{aligned}
+                \label{eq:Versuch2_Kondensator_Phasenverschiebung}
+            \end{equation}
+
+            Zum Schluss berechnen wir noch den Größtfehler der Phasenverschiebung:
+
+            \begin{equation}
+                \begin{aligned}
+                    \Delta \varphi &= \left|\frac{360^{\circ}}{T_{\mathrm{z}}}\right| \cdot \Delta t + \left|\frac{360^{\circ} \cdot t}{T_{\mathrm{z}}^{2}}\right| \cdot \Delta T\\
+                                   &= \left|\frac{360^{\circ}}{1000\ \mathrm{\mu s}}\right| \cdot 50\ \mathrm{\mu s} + \left|\frac{360^{\circ} \cdot (-250\ \mathrm{\mu s})}{(1000\ \mathrm{\mu s})^{2}}\right| \cdot 50\ \mathrm{\mu s}\\
+                                   &= 13.5^{\circ}
+                \end{aligned}
+                \label{eq:Versuch2_Kondensator_Phasenverschiebung_Fehler}
+            \end{equation}
+
+        \subsubsection{Spule}
+            
+            Um die Phasenverschiebung $\varphi$ der Spule zu bestimmen, müssen wir die Periodendauer $T_{\mathrm{z}}$ und die Phasenverschiebung $t$ messen.
+            Die Periodendauer $T_{\mathrm{z}}$ beträgt $100\ \mathrm{\mu s}$, die Phasenverschiebung $t$ beträgt $25\ \mathrm{\mu s}$. Der Fehler für $T_{\mathrm{z}}$ und $t$ beträgt $5\ \mathrm{\mu s}$.
+
+            Die Phasenverschiebung $\varphi$ berechnet sich dann wie folgt:
+
+            \begin{equation}
+                \begin{aligned}
+                    \varphi &= \frac{t}{T} \cdot 360^{\circ}\\
+                         &= \frac{25\ \mathrm{\mu s}}{100\ \mathrm{\mu s}} \cdot 360^{\circ}\\
+                         &= 90^{\circ}
+                \end{aligned}
+                \label{eq:Versuch2_Spule_Phasenverschiebung}
+            \end{equation}
+
+            Der Größtfehler wird mit der gleichen Formel wie bei dem Kondensator berechnet:
+
+            \begin{equation}
+                \begin{aligned}
+                    \Delta \varphi &= \left|\frac{360^{\circ}}{T_{\mathrm{z}}}\right| \cdot \Delta t + \left|\frac{360^{\circ} \cdot t}{T_{\mathrm{z}}^{2}}\right| \cdot \Delta T\\
+                                   &= \left|\frac{360^{\circ}}{100\ \mathrm{\mu s}}\right| \cdot 5\ \mathrm{\mu s} + \left|\frac{360^{\circ} \cdot 25\ \mathrm{\mu s}}{(100\ \mathrm{\mu s})^{2}}\right| \cdot 5\ \mathrm{\mu s}\\
+                                   &= 22.5^{\circ}
+                \end{aligned}
+                \label{eq:Versuch2_Spule_Phasenverschiebung_Fehler}
+            \end{equation}
 
 \section{Versuch 3 - Impedanzmessung an einem unbekannten Zweipol}
     
     \subsection{Versuchsaufbau- und durchführung}
 
+        Im letzten Versuch sollen wir die Charakteristika von zwei unbekannten Zweipolen bestimmen. Dazu wird eine Tabelle mit verschiedenen Frequenzen vorgegeben. Anhand der Messwerte soll bestimmt werden, welche zwei Zweipole und in welcher Art und Weise sie verschaltet sind.
+
     \subsection{Ergebnisse}
     
-    Die gemessenen Werte befinden sich in folgender Tabelle:
+        Die gemessenen Werte befinden sich in folgender Tabelle:
 
-    \begin{table}[H]
-        \centering
-        \caption{Messwerte Versuch 3}
-        \vspace{0.5em}
-        \begin{tabular}{|c||c|c|c|c|c|c|}
-            \hline
-            $f$[Hz] & $U_m$[mV]  & $U_z$[mV] & $t$ [ms] & $T$[ms] & $|Z|$[$\Omega$] & $\phi$[°] \\
-            \hline
-            200 & 23.00& 1000.00& -0.5 & 5& 3644.44& -36.0 \\
-            \hline
-            400 & 20.00 & 1000.00 & -0.2 & 2.5 & 4100.00 & -28.8 \\
-            \hline
-            1000 & 20.0 & 1000.0 & -0.1 & 1.0 & 4100.00 & -36.0 \\
-            \hline
-            2000 & 28.0 & 1000.0 & -0.075 & 0.5 & 2928.57 & -54.00  \\
-            \hline
-            4000 & 44.0 & 1000.0 &  -0.05 & 0.25 & 1863.64 &  -72.00\\
-            \hline
-            10000 & 110.0 & 1000.0 & -0.022 & 0.10 & 745.45 & -79.2 \\
-            \hline
-            20000 & 200.0 & 1000.0& -0.011 & 0.50&410.0 & -79.2\\
-            \hline
-            40000 & 400.0 &1000.0 & -0.006 & 0.25 & 205.00 & -86.4 \\
-            \hline
-            80000 & 660.0 &1000.0 & -0.003 & 0.125 & 124.24 &  -86.4\\
-            \hline
-        \end{tabular}
-        \label{tab:Versuch3_Messwerte}
-\end{table}
-Nun können wir mit folgender Formel die Kapazität des verbauten Kondensators berechnen:
-\begin{equation}
-    \begin{aligned}
-        C = \frac{1}{\omega \cdot |Z|} \\
-        \Rightarrow C = \frac{1}{2\pi f \cdot |Z|}
-        \label{eq:Versuch3_Kapazität}
-    \end{aligned}
-\end{equation}
-Für |Z| wählen wir das |Z| wo $\phi$ am nächsten an -90° ist. 
+        \begin{table}[H]
+            \centering
+            \caption{Messwerte Versuch 3}
+            \vspace{0.5em}
+            \begin{tabular}{|l||l|l|l|l|l|l|l|l|}
+                \hline
+                $f$[Hz] & $U_m$[mV]  & $U_z$[mV] & $R_{m}$[$\Omega$] & $|Z|$[$\Omega$] & $t$ [$\mu$s] & $T$[ms] & $\omega$[Hz] & $\phi$[°] \\
+                \hline
+                \hline
+                200,00   & 22,50  & 1000,00 & 82,00 & 3644,44 & -500,00 & 5000,00 & 1256,64   & -36,00 \\
+                \hline
+                400,00   & 20,00  & 1000,00 & 82,00 & 4100,00 & -200,00 & 2500,00 & 2513,27   & -28,80 \\
+                \hline
+                1000,00  & 20,00  & 1000,00 & 82,00 & 4100,00 & -100,00 & 1000,00 & 6283,19   & -36,00 \\
+                \hline
+                2000,00  & 28,00  & 1000,00 & 82,00 & 2928,57 & -75,00  & 500,00  & 12566,37  & -54,00 \\
+                \hline
+                4000,00  & 44,00  & 1000,00 & 82,00 & 1863,64 & -50,00  & 250,00  & 25132,74  & -72,00 \\
+                \hline
+                10000,00 & 110,00 & 1000,00 & 82,00 & 745,45  & -22,00  & 100,00  & 62831,85  & -79,20 \\
+                \hline
+                20000,00 & 200,00 & 1000,00 & 82,00 & 410,00  & -11,00  & 50,00   & 125663,71 & -79,20 \\
+                \hline
+                40000,00 & 400,00 & 1000,00 & 82,00 & 205,00  & -6,00   & 25,00   & 251327,41 & -86,40 \\
+                \hline
+                80000,00 & 660,00 & 1000,00 & 82,00 & 124,24  & -3,00   & 12,50   & 502654,82 & -86,40\\
+                \hline
+            \end{tabular}
+            \label{tab:Versuch3_Messwerte}
+        \end{table}
+
+        Es lässt sich erkennen, dass ein Widerstand und ein Kondensator parallel geschaltet sind. Warum dies so ist, wird in der Diskussion erläutert.
+
+        Nun können wir mit folgender Formel die Kapazität des verbauten Kondensators berechnen:
+    
+        \begin{equation}
+            \begin{aligned}
+                C &= \frac{1}{\omega \cdot |Z|}\\
+                  &= \frac{1}{251327\ \mathrm{Hz} \cdot 205\ \mathrm{\Omega}}\\
+                  &= 19.4\ \mathrm{nF}
+                \label{eq:Versuch3_Kapazität}
+            \end{aligned}
+        \end{equation}
+
+        Für |Z| wählen wir das |Z|, bei dem $\phi$ am nächsten an -90° ist.
+
+        \begin{figure}[H]
+            \begin{subfigure}{0.5\textwidth}
+                \centering
+                \includegraphics[width=0.9\textwidth]{bilder/Versuch3_1.png}
+                \caption{$|Z|$ über $\mathrm{Hz}$}
+                \label{fig:Versuch3_Messwerte_1}
+            \end{subfigure}
+            \begin{subfigure}{0.5\textwidth}
+                \centering
+                \includegraphics[width=0.9\textwidth]{bilder/Versuch3_2.png}
+                \caption{$\varphi$ über $\mathrm{Hz}$}
+                \label{fig:Versuch3_Messwerte_2}
+            \end{subfigure}
+        \end{figure}
+
+    \subsection{Diskussion}
+
+        \textcolor{red}{TODO: Diskussion}
