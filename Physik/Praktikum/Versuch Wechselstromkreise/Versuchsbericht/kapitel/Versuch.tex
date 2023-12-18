@@ -74,7 +74,7 @@
     
     \subsection{Diskussion}
 
-        \textcolor{red}{TODO: Diskussion}
+    Die vom Betreuer vorgegebene Frequenz beträgt $20\ \mathrm{kHz}$. Die von uns gemessene Frequenz beträgt $21.7 \pm 0.1\ \mathrm{kHz}$. Der Fehler beträgt also $1.7\ \mathrm{kHz}$. Dieser Fehler ist unter anderem auf die Ungenauigkeit des Oszilloskops zurückzuführen welche schon länger nichtmehr kalibriert wurden. Eine weitere Fehlerquelle kann die Ungenauigkeit beim Ablesen der Werte sein. Zum Beispiel dann wenn die Sinuswelle zwischen zwei Skalenstrichen durch läuft.
     
 \section{Versuch 2 - Impedanzmessung an Widerstand, Kondensator und Spule}
     
@@ -92,6 +92,7 @@
     \subsection{Ergebnisse}
 
         \subsubsection{Widerstand}
+         \label{sec:Versuch2_Widerstand}
 
             \begin{table}[H]
                 \centering
@@ -136,6 +137,7 @@
             \end{equation}
 
         \subsubsection{Kondensator}
+        \label{sec:Versuch2_Kondensator}
             
             Als nächstes wird das unbekannte Bauteil durch einen Kondensator ersetzt. Die Messwerte befinden sich in folgender Tabelle:
 
@@ -212,6 +214,7 @@
             \end{equation}
 
         \subsubsection{Spule}
+        \label{sec:Versuch2_Spule}
             
             Um die Phasenverschiebung $\varphi$ der Spule zu bestimmen, müssen wir die Periodendauer $T_{\mathrm{z}}$ und die Phasenverschiebung $t$ messen.
             Die Periodendauer $T_{\mathrm{z}}$ beträgt $100\ \mathrm{\mu s}$, die Phasenverschiebung $t$ beträgt $25\ \mathrm{\mu s}$. Der Fehler für $T_{\mathrm{z}}$ und $t$ beträgt $5\ \mathrm{\mu s}$.
@@ -237,6 +240,14 @@
                 \end{aligned}
                 \label{eq:Versuch2_Spule_Phasenverschiebung_Fehler}
             \end{equation}
+             \subsection{Diskussion}
+             Zu \ref{sec:Versuch2_Widerstand} lässt sich sagen das unser berechneter Widerstand von $99.83 \pm 19.13\ \mathrm{\Omega}$ sehr nah an dem tatsächlichen Widerstand von $82\ \mathrm{\Omega}$ liegt. Der Fehler beträgt $17.83\ \mathrm{\Omega}$.
+
+             \noindent Zu \ref{sec:Versuch2_Kondensator} lässt sich sagen das die Phasenverschiebung von $-90^{\circ} \pm 13.5^{\circ}$ sehr nah an der tatsächlichen Phasenverschiebung von $-90^{\circ}$ liegt. Der Fehler entspricht also dem Größtfehler von $13.5^{\circ}$.
+
+             \noindent Zu \ref{sec:Versuch2_Spule} lässt sich sagen das die gemessene Phasenverschiebung von $-90^{\circ} \pm 22.5^{\circ}$ sehr nah an der tatsächlichen Phasenverschiebung von $90^{\circ}$ liegt. Der Fehler entspricht also dem Größtfehler von $22.5^{\circ}$. 
+
+             \noindent Die Abweichungen der Fehler kamen vorallem durch Ungenauigkeiten beim ablesen vom Oszilloskop zustande. Die Linie ist hier nunmal keine gerade Sinuswelle sondern eine "zitternde" Kurve welche das ablesen erschwert. 
 
 \section{Versuch 3 - Impedanzmessung an einem unbekannten Zweipol}
     
@@ -279,9 +290,9 @@
             \label{tab:Versuch3_Messwerte}
         \end{table}
 
-        Es lässt sich erkennen, dass ein Widerstand und ein Kondensator parallel geschaltet sind. Warum dies so ist, wird in der Diskussion erläutert.
+        \noindent Es lässt sich erkennen, dass ein Widerstand und ein Kondensator parallel geschaltet sind. Warum dies so ist, wird in der Diskussion erläutert.
 
-        Nun können wir mit folgender Formel die Kapazität des verbauten Kondensators berechnen:
+        \noindent Nun können wir mit folgender Formel die Kapazität des verbauten Kondensators berechnen:
     
         \begin{equation}
             \begin{aligned}
@@ -310,5 +321,12 @@
         \end{figure}
 
     \subsection{Diskussion}
+    \begin{figure}[H]
+        \centering
+                \includegraphics[width=0.3\textwidth]{bilder/2pol.png}
+                \caption{2-Pol aus Versuch 3}
+                \label{fig:2pol}
+    \end{figure}
+    Den unbekannten Zweipol den wir bekommen hatten, ist in \ref{fig:2pol} zu sehen. Es handelt sich hierbei um einen Widerstand und einen Kondensator welche parallel geschaltet wurden. Die lässt sich an der Phasenverschiebung erkennen. Aus Versuch \ref{sec:Versuch2_Kondensator} wissen wir das ein Kondensator mit einer Phasenverschiebung von $-90^{\circ}$ zu erkennen ist. Dies zeigt sich in Tabelle \ref{tab:Versuch3_Messwerte} bei 80kHz. Die Phasenverschiebung beträgt hier $-86.4^{\circ}$. Dieser Wert ist sehr nah an $-90^{\circ}$ und lässt sich durch Messungenauigkeiten erklären. Der Widerstand hingegen hat keine Phasenverschiebung und würde sich deshalb ebenfalls in Tabelle \ref{tab:Versuch3_Messwerte} zeigen. Und zwar tritt dies bei 200 Hz auf. Leider kam es hier zu einer großen Ungenauigkeit von $-36^{\circ}$ was aber Nahe an 0 liegt und deshalb als 0 berachtet werden kann.\\
 
-        \textcolor{red}{TODO: Diskussion}
+    \noindent Die Ungenauigkeit lässt sich durch alte Technik und Ungenaugigkeiten beim ablesen erklären. 
