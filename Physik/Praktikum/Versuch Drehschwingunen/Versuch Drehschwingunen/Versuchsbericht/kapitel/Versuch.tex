@@ -11,15 +11,15 @@
         \begin{figure}[H]
             \centering
             \includegraphics[width=\textwidth]{bilder/aufbau_v1.png}
-            \caption{Versuchsaufbau für Versuch 1}
+            \caption{Versuchsaufbau für Versuch 1 aus \hyperref[ref:Versuchsaufbau]{[1]}.}
             \label{fig:Aufbau1}
         \end{figure}
 
-        Das Drehpendel in \ref{fig:Aufbau1} besteht aus einer horizontalen Achse (A) einem darum drehenden Kupferring (R), der über eine Spiralfeder (SF) mit einem Hebel (H) verbunden ist und über eine Stange (S) in Bewegung versetzt werden kann. Die Amplitude kann an einer festen Skala (Sk) abgelesen werden. Die Dämpfung wird durch eine Spannungsquelle erzeugt, die über einen Elektromagneten (EM) auf den Kupferring wirkt.
+        Das Drehpendel in Abb.\ref{fig:Aufbau1} besteht aus einer horizontalen Achse (A) einem darum drehenden Kupferring (R), der über eine Spiralfeder (SF) mit einem Hebel (H) verbunden ist und über eine Stange (S) in Bewegung versetzt werden kann. Die Amplitude kann an einer festen Skala (Sk) abgelesen werden. Die Dämpfung wird durch eine Spannungsquelle erzeugt, die über einen Elektromagneten (EM) auf den Kupferring wirkt.
     
         \subsubsection{Teil 1: Eigenfrequenz}
         \label{sec:1.1}
-            Im ersten Teil von Versuch 1 soll die Eigenfrequenz des Drehpendels bestimmt werden. Der Aufbau ist in \ref{fig:Aufbau1} zu sehen. Um die Eigenfrequenz zu bestimmen wird die Schwingungsdauer wird mit einer Stoppuhr gemessen. Die Messung wird 5 mal wiederholt und läuft über 10 Perioden.
+            Im ersten Teil von Versuch 1 soll die Eigenfrequenz des Drehpendels bestimmt werden. Der Aufbau ist in Abb. \ref{fig:Aufbau1} zu sehen. Um die Eigenfrequenz zu bestimmen wird die Schwingungsdauer wird mit einer Stoppuhr gemessen. Die Messung wird 5 mal wiederholt und läuft über 10 Perioden.
             Die Messergebnisse sind in Tabelle \ref{tab:Eigenfrequenz} zu sehen.    
 
         \subsubsection{Ergebnisse \& Diskussion}
@@ -48,7 +48,7 @@
             \end{table}
 
             Da die Schwingungdauer über 10 Perioden gemessen wird um den Messfehler so gering wie möglich zu halten, muss der Messwert durch $10$ geteilt werden um die Periodendauer zu erhalten. Der Fehler lässt sich auf die Reaktionszeit des Menschen zurückführen und darauf das die Stoppuhr 2 mal betätigt werden muss. Da der Fehler bei der Messung der Schwingungsdauer betrachtet werden muss, wird der Fehler für die Periodendauer ebenfalls durch 10 geteilt.
-            Man erhält nun einen Mittelwert für die Periodendauer von $T = 1,914 \pm 0,06\ \mathrm{s}$. Die $0,06$ basieren auf der 2-fachen Reaktionszeit des Menschen: \url{https://de.wikipedia.org/wiki/Reaktion_(Verkehrsgeschehen)}.
+            Man erhält nun einen Mittelwert für die Periodendauer von $T = 1,914 \pm 0,06\ \mathrm{s}$. Die $0,06$ basieren auf der 2-fachen Reaktionszeit des Menschen \hyperref[ref:Versuchsaufbau]{[2]}.
             Die Eigenfrequenz können wir nun mit folgender Formel berechnen:
 
             \begin{equation}
@@ -59,7 +59,7 @@
             Daraus resultiert eine Eigenfrequenz von:
 
             \begin{equation}
-                \omega_{0} = 2 \pi \cdot f = 2 \pi \cdot \frac{1}{T} = 2 \pi \cdot \frac{1}{1,914\ \mathrm{s}} = 3,28\ \mathrm{Hz}
+                \omega_{0} = 2 \pi \cdot f = 2 \pi \cdot \frac{1}{T} = 2 \pi \cdot \frac{1}{1,914\ \mathrm{s}} = 3,28\ \frac{1}{\mathrm{s}}
                 \label{eq:Eigenfrequenz}
             \end{equation}
 
@@ -67,19 +67,19 @@
 
             \begin{equation}
                 \begin{aligned}
-                \Delta f &= f \cdot \frac{\Delta T}{T}\\
+                \Delta f &= \left| \frac{\partial f}{\partial T} \right| \cdot \Delta T\\
                 \Delta \omega_{0} &= \left|2 \pi \cdot -\frac{1}{T^{2}} \cdot \Delta T\right|
                 \end{aligned}
                 \label{eq:Größtfehler}
             \end{equation}
 
-            Wir erhalten einen Größtfehler von $\Delta \omega_{0} = 0,10\ \mathrm{Hz}$ und somit eine Eigenfrequenz von $\omega_{0} = (3,28 \pm 0,10)\ \mathrm{Hz}$.
+            Wir erhalten einen Größtfehler von $\Delta \omega_{0} = 0,10\ \frac{1}{\mathrm{s}}$ und somit eine Eigenfrequenz von $\omega_{0} = (3,28 \pm 0,10)\ \frac{1}{\mathrm{s}}$.
 
             Das Ergebnis lässt sich nun diskutieren. Da wir keinen Literaturwert haben, können wir nur die Messwerte betrachten. Diese sind in Tabelle \ref{tab:Eigenfrequenz} zu sehen. Die Messwerte sind sehr nah beieinander lässt also darauf schließen, dass hier eine gewisse Konsistenz vorhanden ist. Allerdings ist das Drehpendel nicht ideal, was die Varianz erklärt. Das Endergebnis ist also durchaus plausibel. Zudem kommt, dass eine natürliche Dämpfung vorhanden ist, die die Schwingungsdauer beeinflusst. Diese wurde hier nicht berücksichtigt, weshalb die Messwerte nicht exakt gleich sind.
 
         \subsubsection{Teil 2: Dämpfung}
         
-            Im zweiten Teil soll die Dämpfung des Drehpendels bestimmt werden. Der Versuchsaufbau ist auch hier in \ref{fig:Aufbau1} zu sehen. Im Unterschied zu Teil 1 wird nun allerdings eine Dämpfungsspannung von $2\ \mathrm{V}$, bzw. $4\ \mathrm{V}$ angelegt. Wir möchten hier nun die Dämpungskonstante $\beta$ sowie das Dämpfungsverhältnis $K$ bestimmen. Letzteres beschreibt die relative Veränderung der Amplitude pro Periode. Die Dämpfungskonstante lässt sich nun mit folgender Formel\footnote[1]{Die Formel wurde in der Anleitung des Versuchs hergeleitet und von uns übernommen.} berechnen:
+            Im zweiten Teil soll die Dämpfung des Drehpendels bestimmt werden. Der Versuchsaufbau ist auch hier in Abb. \ref{fig:Aufbau1} zu sehen. Im Unterschied zu Teil 1 wird nun allerdings eine Dämpfungsspannung von $2\ \mathrm{V}$, bzw. $4\ \mathrm{V}$ angelegt. Wir möchten hier nun die Dämpungskonstante $\beta$ sowie das Dämpfungsverhältnis $K$ bestimmen. Letzteres beschreibt die relative Veränderung der Amplitude pro Periode. Die Dämpfungskonstante lässt sich nun mit folgender Formel\footnote[1]{Die Formel wurde in der Anleitung des Versuchs hergeleitet und von uns übernommen.} berechnen:
 
             \begin{equation}
                 \beta = \frac{\ln K}{T}
@@ -105,23 +105,23 @@
                     \hline
                     $0$ & $0,000$ & $17,0$ & $0,000$ & $17,0$ \\
                     \hline
-                    $1$ & $1,946 \pm 0,06$ & $14,2 \pm 0,2$ & $1,945 \pm 0,06$ & $9,2 \pm 0,2$ \\
+                    $1$ & $1,95$ & $14,2 \pm 0,2$ & $1,95$ & $9,2 \pm 0,2$ \\
                     \hline
-                    $2$ & $3,892 \pm 0,06$ & $12,0 \pm 0,2$ & $3,890 \pm 0,06$ & $5,0 \pm 0,2$ \\
+                    $2$ & $3,90$ & $12,0 \pm 0,2$ & $3,89$ & $5,0 \pm 0,2$ \\
                     \hline
-                    $3$ & $5,838 \pm 0,06$ & $10,0 \pm 0,2$ & $5,835 \pm 0,06$ & $2,6 \pm 0,2$ \\
+                    $3$ & $5,84$ & $10,0 \pm 0,2$ & $5,84$ & $2,6 \pm 0,2$ \\
                     \hline
-                    $4$ & $7,784 \pm 0,06$ & $8,4 \pm 0,2$ & $7,78 \pm 0,06$ & $1,4 \pm 0,2$ \\
+                    $4$ & $7,78$ & $8,4 \pm 0,2$ & $7,78$ & $1,4 \pm 0,2$ \\
                     \hline
-                    $5$ & $9,730 \pm 0,06$ & $7,2 \pm 0,2$ & $9,725 \pm 0,06$ & $1,0 \pm 0,2$ \\
+                    $5$ & $9,73$ & $7,2 \pm 0,2$ & $9,73$ & $1,0 \pm 0,2$ \\
                     \hline
-                    $6$ & $11,676 \pm 0,06$ & $6,0 \pm 0,2$ & $11,670 \pm 0,06$ & $0,6 \pm 0,2$ \\
+                    $6$ & $11,68$ & $6,0 \pm 0,2$ & $11,67$ & $0,6 \pm 0,2$ \\
                     \hline
-                    $7$ & $13,622 \pm 0,06$ & $5,0 \pm 0,2$ & $13,615 \pm 0,06$ & $0,4 \pm 0,2$ \\
+                    $7$ & $13,62$ & $5,0 \pm 0,2$ & $13,62$ & $0,4 \pm 0,2$ \\
                     \hline
-                    $8$ & $15,568 \pm 0,06$ & $4,0 \pm 0,2$ & - & - \\
+                    $8$ & $15,57$ & $4,0 \pm 0,2$ & - & - \\
                     \hline
-                    $9$ & $17,514 \pm 0,06$ & $3,4 \pm 0,2$ & - & - \\
+                    $9$ & $17,51$ & $3,4 \pm 0,2$ & - & - \\
                     \hline
                 \end{tabular}
                 \label{tab:ergebnisse_v1.2}
@@ -133,20 +133,20 @@
                 \begin{subfigure}{0.48\textwidth}
                     \centering
                     \includegraphics[width=\textwidth]{bilder/plot_v1_2V.png}
-                    \caption{Amplitude bei $2\ \mathrm{V}$}
+                    \caption{Abbildung 2.2a}
                     \label{fig:plot_v1_2V}
                 \end{subfigure}
                 \begin{subfigure}{0.48\textwidth}
                     \centering
                     \includegraphics[width=\textwidth]{bilder/plot_v1_4V.png}
-                    \caption{Amplitude bei $4\ \mathrm{V}$}
+                    \caption{Abbildung 2.2b}
                     \label{fig:plot_v1_4V}
                 \end{subfigure}
             \end{figure}
 
             Wie bereits oben erwähnt, wurde die Periodendauer über eine weitere Messung bestimmt. Das Drehpendel besitzt eine Zeitschranke, welche bei Amplitude $0$ angebracht ist. Um nun die Amplitude zu messen, wird das Drehpendel ausgelenkt und die Zeit gemessen, die das Pendel für eine Auslenkung auf einer Seite des Nullpunktes benötigt. Die Messung wird für beide Seiten durchgeführt, da die Zeitschranke nicht perkekt symmetrisch ist. Die Werte werden addiert.
 
-            Final können wir nun $\beta$ und $K$ bestimmen. Für $\beta$ gibt es zwei Wege. Der erste Weg ist einfach, da die Berechnung von Excel getätigt wurde. Die Funktionen der Fits \ref{fig:plot_v1_2V} und \ref{fig:plot_v1_4V} beinhalten bereits den finalen Wert. Der zweite Weg ist die Berechnung mit der Formel \ref{eq:Dämpfungskonstante}. Hierzu muss die Dämpfungskonstante bestimmt werden. Diese wird durch das Verhältnis der Amplituden bestimmt. Wir verwenden die Werte von $n = 1$ und $n = 2$ aus Tabelle \ref{tab:ergebnisse_v1.2}.
+            Final können wir nun $\beta$ und $K$ bestimmen. Für $\beta$ gibt es zwei Wege. Der erste Weg ist einfach, da die Berechnung von Excel getätigt wurde. Die Funktionen der Fits in Abb. \ref{fig:plot_v1_2V} und Abb. \ref{fig:plot_v1_4V} beinhalten bereits den finalen Wert. Der zweite Weg ist die Berechnung mit der Formel \ref{eq:Dämpfungskonstante}. Hierzu muss die Dämpfungskonstante bestimmt werden. Diese wird durch das Verhältnis der Amplituden bestimmt. Wir verwenden die Werte von $n = 1$ und $n = 2$ aus Tabelle \ref{tab:ergebnisse_v1.2}.
 
             Die Ergebnisse sind in folgender Tabelle \ref{tab:ergebnisse_v1.2_final} zu sehen.
 
@@ -176,7 +176,7 @@
 
         \subsubsection{Teil 1: Erzwungene Schwingungen}
             
-            In Teil 1 wird in einer vorbereiteten Matlab-Applikation die Resoanzkurve und damit die Resonanzfrequenz des simulierten Pendels herausgefunden. Die Applikation stellt zwei Diagramme zur Verfügung \ref{fig:plots_v2}. Diese stellen einmal die Amplituden und einmal die Phasen der Schwingung dar.
+            In Teil 1 wird in einer vorbereiteten Matlab-Applikation die Resoanzkurve und damit die Resonanzfrequenz des simulierten Pendels herausgefunden. Die Applikation stellt zwei Diagramme zur Verfügung in Abb. \ref{fig:plots_v2}. Diese stellen einmal die Amplituden und einmal die Phasen der Schwingung dar.
             
             \begin{figure}[H]
                 \centering
@@ -186,9 +186,9 @@
             \end{figure}
 
             Es lässt sich gut erkennen, dass die Amplitude des Pendels maximal ist, wenn die Phasenverschiebung der Anregerfrequenz $90\text{\textdegree}$ beträgt.
-            Weiter erkennt man auch das die Schwingungen bzw. Erregungen bei einer hohen Anregerfrequenz z.B. 4 Hz Gegenphasig sind. Bei niedriger Anregerfrequenz z.B. 1 Hz sind die Schwingungen in Phase.
+            Weiter erkennt man auch das die Schwingungen bzw. Erregungen bei einer hohen Anregerfrequenz z.B. 4 Hz Gegenphasig sind. Bei niedriger Anregerfrequenz z.B. 1 $\frac{1}{\mathrm{s}}$ sind die Schwingungen in Phase.
             
-            Die dargestellte Simulation in \ref{fig:plots_v2} wurde 2 mal durchgeführt. Einmal mit einer hohen Dämpfungskonstanten in \textcolor{red}{Rot} und das andere mal mit einer niedrigen Dämpfungskonstanten in \textcolor{blue}{Blau}. Die Dämpfungskonstante kann in der Applikation eingestellt werden. Nun sieht man schnell das in bei einer niedrigen Dämpfungskonstanten die Amplitude deutlich größer ist wie bei einer großen Dämpfungskonstanten. Dies liegt daran das bei einer großen Dämpfungskonstanten die Energie schneller abgebaut wird und somit die Amplitude kleiner ist.Im Phasendiagramm (rechts in \ref{fig:plots_v2}) erkennt man auch hier das die Steigung der Phase deutlich flacher ist wenn die Dämpfungskonstante größer ist. Dies liegt daran das die Phase bei einer großen Dämpfungskonstante schneller abgebaut wird.
+            Die dargestellte Simulation in Abb. \ref{fig:plots_v2} wurde 2 mal durchgeführt. Einmal mit einer hohen Dämpfungskonstanten in \textcolor{red}{Rot} und das andere mal mit einer niedrigen Dämpfungskonstanten in \textcolor{blue}{Blau}. Die Dämpfungskonstante kann in der Applikation eingestellt werden. Nun sieht man schnell das in bei einer niedrigen Dämpfungskonstanten die Amplitude deutlich größer ist wie bei einer großen Dämpfungskonstanten. Dies liegt daran das bei einer großen Dämpfungskonstanten der Energieverlust größer ist und somit die Amplitude kleiner ist.Im Phasendiagramm (rechts in Abb. \ref{fig:plots_v2}) erkennt man auch hier das die Steigung der Phase deutlich flacher ist wenn die Dämpfungskonstante größer ist. 
 
             Nun können wir mit Hilfe der gegegeben Federkonstante $D$ die Masse des simulierten Federpendels bestimmen.
 
@@ -260,7 +260,7 @@
 
     \subsection{Versuchsaufbau und -durchführung}
             
-        In Versuch 3 wird der gleiche Aufbau wie in Versuch 1 verwendet: \ref{fig:Aufbau1}. Diesmal wird allerdings der Motor zur Anregung verwendet. Es muss zusätzlich noch eine Dämpfungsspannung von $2\ \mathrm{V}$ angelegt werden, da das Pendel sonst die maximale Amplitude überschreitet. Die Messung der Amplitude erfolgt wie üblich über die Skala des Drehpendels. Die Messung der Periodendauer erfolgt ebenfalls wie in Versuch 1. Teil 2. Die Anregerfrequenz kann am Gerät abgelesen werden und die Phasenzeit wird ebenfalls über eine extra Messung wie die der Amplitude durchgeführt. Hierzu wird das Gerät, welches die Anregerfrequenz erzeugt benutzt, welche einem die Phasenzeit anzeigt.
+        In Versuch 3 wird der gleiche Aufbau wie in Versuch 1 verwendet: Abb. \ref{fig:Aufbau1}. Diesmal wird allerdings der Motor zur Anregung verwendet. Es muss zusätzlich noch eine Dämpfungsspannung von $2\ \mathrm{V}$ angelegt werden, da das Pendel sonst die maximale Amplitude überschreitet. Die Messung der Amplitude erfolgt wie üblich über die Skala des Drehpendels. Die Messung der Periodendauer erfolgt ebenfalls wie in Versuch 1. Teil 2. Die Anregerfrequenz kann am Gerät abgelesen werden und die Phasenzeit wird ebenfalls über eine extra Messung wie die der Amplitude durchgeführt. Hierzu wird das Gerät, welches die Anregerfrequenz erzeugt benutzt, welche einem die Phasenzeit anzeigt.
 
         \subsubsection{Teil 1: Resonanzfrequenz}
         
@@ -282,7 +282,7 @@
             \begin{equation}
                 \varphi = \frac{\text{Phasenzeit}}{T}
             \end{equation}
-            Der in der Tabelle angegebene Fehler für die Zeit kommt von der menschlichen Reaktionszeit. Die Reaktionszeit wurde mit $0,03\ \mathrm{s}$ angenommen. Der FEhler für die Amplitude resultiert aus der Ungenauigkeit beim Ablesen der Skala. Hier wurde ein Fehler von $0,2\ \mathrm{LE}$ angenommen, das dies die kleinste ablesbare Einheit war.
+            Hier is der Fehler ist etwas komplizierter und relativ klein im Vergleich zu anderen Einflüssen, weshalb er vernachlässigt wird.
             \begin{table}[H]
                 \centering
                 \caption{Messergebnisse für Versuch 3}
@@ -292,31 +292,31 @@
                     Motor & $\frac{T}{2}$ links in $\mathrm{ms}$ & $\frac{T}{2}$ rechts in $\mathrm{ms}$ & $\mathrm{T}$ in $\mathrm{ms}$ & $\omega_{a}$ in $\frac{1}{\mathrm{s}}$ & Amplitude in LE& $\varphi$ in $\mathrm{ms}$ & Phi in Grad\\
                     \hline
                     \hline
-                    $445$ & $1117 \pm 3$ & $1054 \pm 3$ & $2171 \pm 3$ & $2,89$ & $2,4 \pm 0.2$ & $65 \pm 3$ & $10,78$\\
+                    $445$ & $1117 $ & $1054 $ & $2171 $ & $2,89$ & $2,4 \pm 0.2$ & $65 $ & $10,78$\\
                     \hline
-                    $465$ & $1058 \pm 3$ & $1026 \pm 3$ & $2084 \pm 3$ & $3,01$ & $3,4 \pm 0.2$ & $122 \pm 3$ & $21,07$\\
+                    $465$ & $1058 $ & $1026 $ & $2084 $ & $3,01$ & $3,4 \pm 0.2$ & $122$ & $21,07$\\
                     \hline
-                    $475$ & $1034 \pm 3$ & $1015 \pm 3$ & $2049 \pm 3$ & $3,07$ & $4,5 \pm 0.2$ & $163 \pm 3$ & $28,64$\\
+                    $475$ & $1034 $ & $1015 $ & $2049 $ & $3,07$ & $4,5 \pm 0.2$ & $163 $ & $28,64$\\
                     \hline
-                    $485$ & $1001 \pm 3$ & $1003 \pm 3$ & $2004 \pm 3$ & $3,14$ & $6,4 \pm 0.2$ & $248 \pm 3$ & $44,55$\\
+                    $485$ & $1001 $ & $1003 $ & $2004 $ & $3,14$ & $6,4 \pm 0.2$ & $248 $ & $44,55$\\
                     \hline
-                    $490$ & $984 \pm 3$ & $998 \pm 3$ & $1982 \pm 3$ & $3,17$ & $8,0 \pm 0.2$ & $308 \pm 3$ & $55,94$\\
+                    $490$ & $984 $ & $998 $ & $1982 $ & $3,17$ & $8,0 \pm 0.2$ & $308 $ & $55,94$\\
                     \hline
-                    $495$ & $971 \pm 3$ & $994 \pm 3$ & $1965 \pm 3$ & $3,20$ & $9,4 \pm 0.2$ & $397 \pm 3$ & $72,73$\\
+                    $495$ & $971 $ & $994 $ & $1965 $ & $3,20$ & $9,4 \pm 0.2$ & $397 $ & $72,73$\\
                     \hline
-                    $500$ & $959 \pm 3$ & $987 \pm 3$ & $1946 \pm 3$ & $3,23$ & $10,0 \pm 0.2$ & $498 \pm 3$ & $92,13$\\
+                    $500$ & $959 $ & $987 $ & $1946 $ & $3,23$ & $10,0 \pm 0.2$ & $498 $ & $92,13$\\
                     \hline
-                    $505$ & $950 \pm 3$ & $974 \pm 3$ & $1924 \pm 3$ & $3,27$ & $9,4 \pm 0.2$ & $617 \pm 3$ & $115,45$\\
+                    $505$ & $950 $ & $974 $ & $1924 $ & $3,27$ & $9,4 \pm 0.2$ & $617 $ & $115,45$\\
                     \hline
-                    $510$ & $946 \pm 3$ & $965 \pm 3$ & $1911 \pm 3$ & $3,29$ & $8,4 \pm 0.2$ & $667 \pm 3$ & $125,65$\\
+                    $510$ & $946 $ & $965 $ & $1911 $ & $3,29$ & $8,4 \pm 0.2$ & $667 $ & $125,65$\\
                     \hline
-                    $515$ & $941 \pm 3$ & $950 \pm 3$ & $1891 \pm 3$ & $3,32$ & $7,0 \pm 0.2$ & $717 \pm 3$ & $136,50$\\
+                    $515$ & $941 $ & $950 $ & $1891$ & $3,32$ & $7,0 \pm 0.2$ & $717 $ & $136,50$\\
                     \hline
-                    $525$ & $931 \pm 3$ & $924 \pm 3$ & $1855 \pm 3$ & $3,39$ & $4,8 \pm 0.2$ & $761 \pm 3$ & $147,69$\\
+                    $525$ & $931 $ & $924 $ & $1855$ & $3,39$ & $4,8 \pm 0.2$ & $761 $ & $147,69$\\
                     \hline
-                    $535$ & $923 \pm 3$ & $901 \pm 3$ & $1824 \pm 3$ & $3,44$ & $3,8 \pm 0.2$ & $777 \pm 3$ & $153,36$\\
+                    $535$ & $923 $ & $901$ & $1824 $ & $3,44$ & $3,8 \pm 0.2$ & $777 $ & $153,36$\\
                     \hline
-                    $555$ & $906 \pm 3$ & $895 \pm 3$ & $1765 \pm 3$ & $3,56$ & $2,4 \pm 0.2$ & $771 \pm 3$ & $157,26$\\
+                    $555$ & $906 $ & $895 $ & $1765$ & $3,56$ & $2,4 \pm 0.2$ & $771 $ & $157,26$\\
                     \hline
                 \end{tabular}
                 \label{tab:ergebnisse_v3}
@@ -328,13 +328,13 @@
                 \begin{subfigure}{0.48\textwidth}
                     \centering
                     \includegraphics[width=\textwidth]{bilder/plot_v3_1.png}
-                    \caption{Amplitude über Anregungsfrequenz}
+                    \caption{Abb. 2.5a}
                     \label{fig:plot_v3_1}
                 \end{subfigure}
                 \begin{subfigure}{0.48\textwidth}
                     \centering
                     \includegraphics[width=\textwidth]{bilder/plot_v3_2.png}
-                    \caption{Phasenzeit über Anregungsfrequenz}
+                    \caption{Abb. 2.5b}
                     \label{fig:plot_v3_2}
                 \end{subfigure}
             \end{figure}
@@ -347,13 +347,13 @@
                 \begin{subfigure}{0.48\textwidth}
                     \centering
                     \includegraphics[width=\textwidth]{bilder/AmplitudenkurveGruppe2.png}
-                    \caption{Amplitudenkurve}
+                    \caption{Amplitudenkurve Abb. 2.6a}
                     \label{fig:Amplitudenkurve}
                 \end{subfigure}
                 \begin{subfigure}{0.48\textwidth}
                     \centering
                     \includegraphics[width=\textwidth]{bilder/PhasenwinkelGruppe2.png}
-                    \caption{Phasenkurve}
+                    \caption{Phasenkurve Abb. 2.6b}
                     \label{fig:Phasenkurve}
                 \end{subfigure}
             \end{figure}
@@ -368,11 +368,11 @@
         \subsubsection{Diskussion}
         Abschließen für den Versuch 3 sollen wir nun noch die hier ermittelte Dämpfungskonstante $\beta$ mit der aus Versuch 1.2 vergleichen. 
 
-        Die Dämpungskonstante beträgt hier $\beta_{resonanzkurve}$ = 0.0813 und in Versuch 1.2 $\beta_{gemittelt2V}$= 0.0895. Die Dämpungskonstante ist also in Versuch 1.2 etwas größer als in Versuch 3. Der Unterschied lässt sich durch eine größere Genauigkeit in \ref{sec:3.2} erklären da dort mehr Messwerte aufgenommen wurden und dadurch auch mehr Werte in die Berechnung der Dämpungskonstante eingehen.
+        Die Dämpungskonstante beträgt hier $\beta_{resonanzkurve}$ = 0.0813 und in Versuch 1.2 $\beta_{gemittelt2V}$= 0.0895. Die Dämpungskonstante ist also in Versuch 1.2 etwas größer als in Versuch 3. Der Unterschied lässt sich durch eine größere Genauigkeit in Abschnitt \ref{sec:3.2} erklären da dort mehr Messwerte aufgenommen wurden und dadurch auch mehr Werte in die Berechnung der Dämpungskonstante eingehen.
 
-        Der Vergleich von der Eigenfrequenz ist in der nächsten Section. 
+        \noindent Der Vergleich von der Eigenfrequenz ist im nächsten Abschnitt zu finden. 
 
     \subsection{Abschließende Diskussion}
-    Die Lernziele der Versuche war zu sehen wie sich ein Pendel undgeämpft und gedämpft verhält und wie man mit unterschiedlichen Methoden die Eigenfrequenz eines Pendels bestimmen kann. Hier lässt sich vorallem die Eigenfrequenz aus \ref{sec:1.1} mit der aus \ref{sec:3.2} vergleichen. In der Tabelle \ref{tab:ergebnisse_v3} erkennt man die Eigenfrequenz am daran, das dort die Amplitude am größten ist. Die berechnete Eigenfrequenz von 3.28 Hz in \ref{sec:1.1} ist sehr nahe an der in \ref{sec:3.2} von 3.23 Hz. Dies ist unserer Meinung nach auch das genauere Ergebnis da man aus der gleichen Tabelle auch ablesen kann das die Amplitude bei 3.28 Hz schon wieder kleiner wird und somit nicht die Eigenfrequenz sein kann.
+    Die Lernziele der Versuche war zu sehen wie sich ein Pendel ungedämpft und gedämpft verhält und wie man mit unterschiedlichen Methoden die Eigenfrequenz eines Pendels bestimmen kann. Hier lässt sich vorallem die Eigenfrequenz aus Abschnitt \ref{sec:1.1} mit der aus Abschnitt \ref{sec:3.2} vergleichen. In der Tabelle \ref{tab:ergebnisse_v3} erkennt man die Eigenfrequenz am daran, das dort die Amplitude am größten ist. Die berechnete Eigenfrequenz von 3.28 Hz in Abschnitt \ref{sec:1.1} ist sehr nahe an der in Abschnitt \ref{sec:3.2} von 3.23 $\frac{1}/{\mathrm{s}}$. Dies ist unserer Meinung nach auch das genauere Ergebnis da man aus der gleichen Tabelle auch ablesen kann das die Amplitude bei 3.28 $\frac{1}/{\mathrm{s}}$ schon wieder kleiner wird und somit nicht die Eigenfrequenz sein kann.
     
-    Wir konnten dabei ebenfalls feststellen das die Eigenfrequenz immer die gleiche ist, unabhängig davon ob die Schwingung nun gedämpft wird oder nicht.
+    \noindent Wir konnten dabei ebenfalls feststellen das die Eigenfrequenz immer die gleiche ist, unabhängig davon ob die Schwingung nun gedämpft wird oder nicht.
