@@ -4,20 +4,7 @@
 \setcounter{section}{0}
 \setcounter{subsection}{0}
 
-        \begin{table}[H]
-            \centering
-            \caption{Messwerte Versuch 1}
-            \vspace*{1em}
-            \begin{tabular}{|l|l|l|l|}
-                \hline
-                & Abstand $a_{n}$ & Abstand $L$ & Gitterkonstante $g_{n}$\\
-                \hline
-                $n = 1$ & $19,0\ \mathrm{cm}$ & $150,0\ \mathrm{cm}$ & $9,99\ \mathrm{\mu m}$\\
-                \hline
-                $n = 2$ & $38,3\ \mathrm{cm}$ & $150,0\ \mathrm{cm}$ & $9,91\ \mathrm{\mu m}$\\
-                \hline
-            \end{tabular}
-        \end{table}
+        
  
         \section{Versuch 1, Oberflächenspannung von Wasser und Ethanol mit der Abreißmethode}
         \label{sec:Versuch1}
@@ -44,6 +31,44 @@
 
         \noindent Nun heben wir die Flüssigkeit soweit an bis der Ring eintaucht. Diese lassen wir nun so langsam wieder herunter bis der Ring wieder herausgezogen wird. Dabei messen wir die maximale Kraft $\mathrm{F}$, die nötig ist um den Ring wieder herauszuziehen. Die abgelesene maximale Kraft beträgt $\mathrm{F}$ können wir dann in \ref{eq:Oberflächenspannung} einsetzen. Mit dieser Variante bestimmen wir $\sigma$ von demineralisiertem Wasser und Ethanol.
         \subsection{Auswertung}
+
+        Die Oberflächenspannung ergibt sich mit Hilfe der Formel \ref{eq:Oberflächenspannung}.
+        Der Größtfehler $\Delta \sigma$ der Oberflächenspannung berechnet sich nun wie folgt:
+
+        \begin{equation}
+            \Delta \sigma = \left| \frac{1}{2 \pi \mathrm{d}} \right| \cdot \Delta \mathrm{F} + \left| -\frac{\mathrm{F}}{2 \pi \mathrm{d}^2} \right| \cdot \Delta \mathrm{d} 
+            \label{eq:Größtfehler}
+        \end{equation}
+
+        Die Ergebnisse finden sich in der Tabelle \ref{tab:Versuch1_Ergebnisse}.
+
+        Mittelwert $\mathrm{d[cm]}$ = TODO
+        Abweichung $\sigma_d \mathrm{[cm]}$
+
+        \begin{table}[H]
+            \centering
+            \caption{Messwerte Versuch 1}
+            \label{tab:Versuch1_Ergebnisse}
+            \vspace*{1em}
+            \begin{tabular}{|l|l|l|l|}
+                \hline
+                 & demineralisiertes Wasser & Ethanol \\
+                \hline
+                $\mathrm{F_1 [N]}$ &  & \\
+                \hline
+                $\mathrm{F_2 [N]}$ & & \\
+                \hline
+                $\mathrm{F_3 [N]}$ &  & \\
+                \hline
+                Mittelwert $\mathrm{F [N]}$ & & \\
+                \hline
+                $\sigma \frac{\mathrm{N}}{\mathrm{m}}$ & & \\
+                \hline
+                $\Delta \sigma \frac{\mathrm{N}}{\mathrm{m}}$ & & \\
+                \hline
+            \end{tabular}
+        \end{table}
+        
         \subsection{Diskussion}
 
         \section{Versuch 2, Oberflächenspannung von Tensidlösungen mit der Abreißmethode}
@@ -52,6 +77,12 @@
         Der Aufbau ist wieder gleich zu Versuch 1 und findet sich in Abb. \ref{fig:Versuch1_Aufbau}. 
 
         \subsection{Auswertung}
+        Die SDS-Konzentration $\mathrm{c}$ der Lösung berechnet sich wie folgt:
+
+        %\begin{equation}
+         %   \mathrm{c} = \frac{50\frac{\mathrm{mmol}}{\mathrm{l}} \cdot \mathrm{x}}{500 \mathrm{ml} + \mathrm{x}}
+           % \label{eq:Konzentration}
+        %\end{equation}
         \subsection{Diskussion}
 
         \section{Versuch 3, Oberflächenspannung von Wasser und SDS-Lösung mit der Kapillarmethode}
