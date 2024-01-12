@@ -242,11 +242,11 @@
             \end{equation}
 
             \subsection{Diskussion}
-                Zu \ref{sec:Versuch2_Widerstand} lässt sich sagen das unser berechneter Widerstand von $99.83 \pm 19.13\ \mathrm{\Omega}$ sehr nah an dem tatsächlichen Widerstand von $110\ \mathrm{\Omega}$ liegt.
+                Zu \ref{sec:Versuch2_Widerstand} lässt sich sagen das unser berechneter Widerstand von $100 \pm 20\ \mathrm{\Omega}$ sehr nah an dem tatsächlichen Widerstand von $110\ \mathrm{\Omega}$ liegt.
 
-                \noindent Zu \ref{sec:Versuch2_Kondensator} lässt sich sagen das die Phasenverschiebung von $-90^{\circ} \pm 13.5^{\circ}$ sehr nah an der tatsächlichen Phasenverschiebung von $-90^{\circ}$ liegt. Der Fehler entspricht also dem Größtfehler von $13.5^{\circ}$.
+                \noindent Zu \ref{sec:Versuch2_Kondensator} lässt sich sagen das die Phasenverschiebung von $-90^{\circ} \pm 14^{\circ}$ sehr nah an der tatsächlichen Phasenverschiebung von $-90^{\circ}$ liegt. Der Fehler entspricht also dem Größtfehler von $13.5^{\circ}$.
 
-                \noindent Zu \ref{sec:Versuch2_Spule} lässt sich sagen das die gemessene Phasenverschiebung von $-90^{\circ} \pm 22.5^{\circ}$ sehr nah an der tatsächlichen Phasenverschiebung von $90^{\circ}$ liegt. Der Fehler entspricht also dem Größtfehler von $22.5^{\circ}$. 
+                \noindent Zu \ref{sec:Versuch2_Spule} lässt sich sagen das die gemessene Phasenverschiebung von $-90^{\circ} \pm 23^{\circ}$ sehr nah an der tatsächlichen Phasenverschiebung von $90^{\circ}$ liegt. Der Fehler entspricht also dem Größtfehler von $22.5^{\circ}$. 
 
                 \noindent Die Abweichungen der Fehler kamen vorallem durch Ungenauigkeiten beim ablesen vom Oszilloskop zustande. Die Linie ist hier nunmal keine gerade Sinuswelle sondern eine \glqq zitternde\grqq\ Kurve welche das ablesen erschwert. 
 
@@ -341,7 +341,8 @@
                 \label{fig:2pol}
         \end{figure}
 
-        Der unbekannten Zweipol den wir bekommen hatten, ist in \ref{fig:2pol} zu sehen. Es handelt sich hierbei um einen Widerstand und einen Kondensator welche parallel geschaltet wurden. Die lässt sich an der Phasenverschiebung erkennen. Aus Versuch \ref{sec:Versuch2_Kondensator} wissen wir das ein Kondensator mit einer Phasenverschiebung von $-90^{\circ}$ zu erkennen ist. Dies zeigt sich in Tabelle \ref{tab:Versuch3_Messwerte} bei 80kHz. Die Phasenverschiebung beträgt hier $-86.4^{\circ}$. Dieser Wert ist sehr nah an $-90^{\circ}$ und lässt sich durch Messungenauigkeiten erklären. Der Widerstand hingegen hat keine Phasenverschiebung und würde sich deshalb ebenfalls in Tabelle \ref{tab:Versuch3_Messwerte} zeigen. Und zwar tritt dies bei 200 Hz auf. Leider kam es hier zu einer großen Ungenauigkeit von $-28.8^{\circ}$ was aber am nächsten an 0 liegt und deshalb als 0 berachtet wurde.\\
+        Der uns übergebene unbekannte Zweipol ist in Abbildung \ref{fig:2pol} dargestellt. Es handelt sich um eine Parallelschaltung aus einem Widerstand und einem Kondensator, wie anhand der Phasenverschiebung ersichtlich ist. Gemäß den Erkenntnissen aus Versuch \ref{sec:Versuch2_Kondensator} wissen wir, dass ein Kondensator bei $-90^{\circ}$ Phasenverschiebung liegt. In Tabelle \ref{tab:Versuch3_Messwerte} bei einer Frequenz von $80\ \mathrm{kHz}$ beträgt die Phasenverschiebung $-86.4^{\circ}$, was trotz geringer Abweichung als stimmig betrachtet wird, wobei mögliche Messungenauigkeiten berücksichtigt werden.
 
-        \noindent Die Ungenauigkeit lässt sich durch alte Technik und Ungenaugigkeiten beim ablesen erklären. 
-        \textcolor{red}{TODO besser erklären warum parallel und nicht Reihenschaltung}
+        Der Widerstand hingegen weist keine Phasenverschiebung auf und zeigt sich bei $200\ \mathrm{Hz}$. Leider kam es hier zu einer größeren Ungenauigkeit von $-28.8^{\circ}$, was jedoch als nahezu $0$ betrachtet wird. Die auftretenden Ungenauigkeiten können auf veraltete Technik und Abweichungen beim Ablesen zurückgeführt werden.
+
+        Es ist wichtig zu beachten, dass für eine Parallelschaltung von $R$ und $C$ der Wechselstromwiderstand ($Z$) bei hohen Frequenzen vom Kondensator und bei niedrigen Frequenzen vom Widerstand bestimmt wird. Bei einer Reihenschaltung hingegen wird $Z$ bei hohen Frequenzen durch den Widerstand und bei niedrigen Frequenzen durch den Kondensator bestimmt. In unserem Fall, mit dem beobachteten Verhalten, zeigt sich das erste Szenario: Bei niedrigen Frequenzen bleibt der ohmsche Widerstand nahezu konstant, und die Phasenverschiebung nähert sich $0^{\circ}$. Bei höheren Frequenzen hingegen nimmt der Wechselstromwiderstand des Kondensators mit steigender Frequenz stetig ab, und die Phasenverschiebung nähert sich $-90^{\circ}$ an.
