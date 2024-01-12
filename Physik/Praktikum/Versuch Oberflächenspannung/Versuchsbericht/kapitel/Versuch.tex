@@ -78,7 +78,7 @@
             \end{table}
         
         \subsection{Diskussion}
-
+        Auf den ersten Blick sieht man das Ethanol eine deutlich kleiner Oberflächenspannung hat als Demin. Dies liegt daran das Ethanol eine geringere Dichte hat als Wasser. Die Oberflächenspannung ist also nicht nur von der Flüssigkeit abhängig sondern auch von der Dichte. Vergleicht man nun unseren Wert für Wasser $\sigma = 78.314 \frac{\mathrm{mN}}{\mathrm{m}} \pm 2.588 \frac{\mathrm{mN}}{\mathrm{m}}$ mit dem Literaturwert bei 25°C für Wasser $\sigma = 71.99 \frac{\mathrm{mN}}{\mathrm{m}}$ so lässt sich der Unterschied durch verschiedene Faktoren erklären. Einmal ist die Temperatur im Seminarraum nicht 25°C sondern weicht davon ab, was das Ergebnis beeinflusst. Weiter wurde im Labor vermutlich deutlich reiner gearbeitet wie das bei uns im Praktikum der Fall war. Dadurch konnten genauere Messungen durchgeführt werden. Bei Ethano ist das natürlich der gleiche Fall.
     \section{Versuch 2, Oberflächenspannung von Tensidlösungen mit der Abreißmethode}
 
         \subsection{Aufbau}
@@ -87,34 +87,64 @@
         \subsection{Auswertung}
             Die SDS-Konzentration $\mathrm{c}$ der Lösung berechnet sich wie folgt:
 
-<<<<<<< HEAD
         \begin{equation}
             \mathrm{c} = \frac{50 \cdot \mathrm{x}}{500  + \mathrm{x} }\mathrm{[mM]}
             \label{eq:Konzentration}
         \end{equation}
-=======
-            %\begin{equation}
-            %   \mathrm{c} = \frac{50\frac{\mathrm{mmol}}{\mathrm{l}} \cdot \mathrm{x}}{500 \mathrm{ml} + \mathrm{x}}
-            % \label{eq:Konzentration}
-            %\end{equation}
-        
->>>>>>> fe4d4a7957fc1a088dee30daafa6e3b2877375e8
+        Wobei x der insgesamt hinzugefügten Menge SDS-Lösung entspricht.
+        Nun haben wir der Anleitung entsprechend folgende Werte messen können.
+
+        \begin{table}[H]
+            \centering
+            \caption{Messwerte Versuch 2}
+            \label{tab:Versuch2_Ergebnisse}
+            \vspace{0.8em}
+            \begin{tabular}{|c|c|c|c|c|c|c|}
+                \hline
+                $\mathrm{x_{ges}}$ in ml & $\mathrm{F_{mittel}}$ in mN & 1. Messung (F) & 2. Messung (F) & c in $\frac{\mathrm{mmol}}{\mathrm{l}}$ & log c & $\sigma \mathrm{ in } \frac{\mathrm{mN}}{\mathrm{m}}$ \\ 
+                \hline
+                0.000 & 33.500 & 33.000 & 34.000 & 0.000 & NAN & 84.36 \\
+                \hline
+                1.000 & 34.500 & 35.000 & 34.000 & 0.100 & -1.001 & 87.156 \\
+                \hline
+                2.000 & 33.500 & 34.000 & 33.000 & 0.199 & -0.701 & 84.603 \\
+                \hline
+                5.000 & 30.500 & 30.000 & 31.000 & 0.495 & -0.305 & 77.051 \\ 
+                \hline
+                10.000 & 26.500 & 26.000 & 27.000 & 0.980 & -0.009 & 66.946 \\
+                \hline
+                20.000 & 23.000 & 23.000 & 23.000 & 1.923 & 0.284 & 58.104 \\
+                \hline
+                40.000 & 20.000 & 20.000 & 20.000 & 3.704 & 0.569 & 50.525 \\
+                \hline
+                60.000 & 17.000 & 18.000 & 16.000 & 5.357 & 0.729 & 42.947\\
+                \hline
+                80.000 & 15.000 & 15.000 & 15.000 & 6.897 & 0.839 & 37.894\\
+                \hline
+                100.000 & 13.000 & 13.000 & 13.000 &  8.333 & 0.921 & 32.841\\
+
+                \hline
+                120.000 & 15.250 & 15.000 & 15.500 & 9.677 & 0.986 & 38.526\\
+                \hline
+                170.000 & 16.750 & 17.000 & 16.500 & 12.687 & 1.103 & 42.315\\
+                \hline
+                220.000 & 17.500 & 17.500 & 17.500 & 15.278 & 1.184 & 44.210\\
+                \hline
+            \end{tabular}
+        \end{table}
+        Diese Werte lassen sich gut in folgendem Diagramm darstellen:
+        \begin{figure}[H]
+            \centering
+            \caption{Diagramm zu Tabelle \ref{tab:Versuch2_Ergebnisse}}
+            \label{fig:versuch2}
+            \includegraphics[width=0.8\textwidth]{bilder/diagramm1.png}
+        \end{figure}
+
         \subsection{Diskussion}
+        Zuerst zu den Abweichungen zum Literaturwert. Das Pulver zum anmixen der SDS-Lösung war schon älter und damit auch nichtmehr so rein wie es sein müsste um gute Ergebnisse zu erzielen. Da wir aus dem Skript wissen das Verunreinigungen die Oberflächenspannung erhöhen. Weiter war komplett sauberes Arbeiten nicht möglich und auch die Temperatur entsprach nicht der in der Literatur. Was man aber analog zu Literatur erkennt ist, dass die Kurve erst annährend wie eine Gerade fällt, also die Oberflächenspannung immer abnimmt. Bis der tiefste Punkt, die ideale Konzentration erreicht ist. Danach steigt die Oberflächenspannung wieder an. \textcolor{red}{TODO phänomen name}. 
 
     \section{Versuch 3, Oberflächenspannung von Wasser und SDS-Lösung mit der Kapillarmethode}
 
-<<<<<<< HEAD
-       \subsection{Aufbau}
-        
-       \begin{figure}[H]
-           \centering
-           \includegraphics[width=0.8\textwidth]{bilder/Kapillarmethode.png}
-           \caption{Versuchsaufbau Versuch 3 \ref{an:Anleitung}}
-           \label{fig:Versuch3_Aufbau}
-         \end{figure}
-       \subsection{Auswertung}
-         \subsection{Diskussion}
-=======
         \subsection{Aufbau}
 
             \begin{figure}[H]
@@ -123,8 +153,7 @@
                 \caption{Versuchsaufbau Versuch 3 \ref{an:Anleitung}}
                 \label{fig:Versuch3_Aufbau}
             \end{figure}
->>>>>>> fe4d4a7957fc1a088dee30daafa6e3b2877375e8
 
         \subsection{Auswertung}
         
-        g\subsection{Diskussion}
+        \subsection{Diskussion}
