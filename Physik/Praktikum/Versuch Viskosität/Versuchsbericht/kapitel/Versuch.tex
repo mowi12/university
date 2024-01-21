@@ -13,7 +13,11 @@
             Ein Glaszylinder, welcher mind. $30\ \mathrm{cm}$ hoch ist, wird mit Getriebeöl OKS 3740 befüllt. Nun wird eine Fallstrecke $L$ von $15\ \mathrm{cm}$ markiert. Diese hat mind. $5\ \mathrm{cm}$ Abstand zur Öffnung des Gefäßes. Anschließend werden jeweils 10 Kugeln in der Mitte des Gefäßes fallen gelassen und die Fallzeit im Abschnitt $L$ gemessen. Dies wird für die Kugeldurchmesser $d = 1, 2, 3\ \mathrm{mm}$ und $4\ \mathrm{mm}$ wiederholt. Die $3\ \mathrm{mm}$-Kugel wird 30 Mal gemessen und später eine Verteilung zufällig schwankender Messwerte graphisch darzustellen.
             Die Viskosität lässt sich dann über die Formel der dynamischen Viskosität $\eta$ berechnen, oder mit Hilfe eines Graphens.
 
+            Für die statistische Auswertung der Messwerte wird die Software Origin verwendet. Es wird eine Häufigkeitsverteilung der Messwerte erstellt und eine Gaußkurve angepasst.
+
         \subsection{Auswertung}
+
+            \subsubsection{a)}
 
             Zunächst wurde der Durchmesser $d$ stichprobenartig von $3$ Kugeln gemessen:
 
@@ -148,14 +152,25 @@
                 \caption{Fallzeiten über $\frac{1}{d^{2}}$.}
                 \label{fig:graph_01}
             \end{figure}
+
+            \subsubsection{b)}
+
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=0.8\textwidth]{bilder/Diagramm Fallzeiten.pdf}
+                \caption{Häufigkeitsverteilung der Fallzeiten der $3\ \mathrm{mm}$-Kugel.}
+                \label{fig:graph_02}
+            \end{figure}
         
         \subsection{Diskussion}
 
-            \textcolor{red}{TODO}
+            Zu den Messwerten der Fallzeiten lässt sich nicht viel sagen. Sie liegen alle in einem angemessenem Zeitraum und auch die Standardabweichung ist gering. Die Werte der Fallzeiten in Graph \ref{fig:graph_01} veranschaulichen einigermaßen gut, dass sich die Werte in einem normalen Bereich befinden.
 
-            Notizen:
-            Warum ist zweiter Viskosität Wert niedriger $\rightarrow$ wegen $1/d^2$, gewichtung liegt auf 1mm kugel, die genauer ist, da mehr laminare strömung und weniger turbulenz
-            Warum generll höher $\rightarrow$ luftemperatur 20 Grad, aber flüssigkeit vielleicht nicht, allgmeine Messfehler
+            Betrachten wir nun die berechnete Viskosität, so fällt auf, dass die Viskosität kontinuierlich bei steigendem Kugeldurchmesser zunimmt. Dies ist zu erwarten, da bei steigendem Durchmesser (und Masse) die Fallgeschwindigkeit zunimmt und somit weniger laminare Strömung und mehr Turbulenz entsteht. Turbulenz benötigt Energie, wodurch die Geschwindigkeit der Kugel fällt, was zu einer höheren Viskosität führt.
+
+            Im Vergleich dazu betrachten wir nun den Wert, welcher durch die Steigung der Gerade aus Graph \ref{fig:graph_02} berechnet wurde. Hier wurde eine gerade durch die 4 Fallzeiten der Kugeln gelegt. Allerdings wurden diese Werte über $\frac{1}{d^{2}}$ gemappt, was dazu führt, dass die kleineren Durchmesser, vor allem die $1\ \mathrm{mm}$-Kugel, einen größeren Einfluss auf die Steigung haben, als die größeren Kugeln. Schauen wir uns den berechneten Wert der Viskosität an, so sehen wir, dass dieser um einiges geringer ist, als der berechnete Wert aus der ersten Methode. Zudem sehen wir, dass er sehr nah am Wert der $1\ \mathrm{mm}$-Kugel liegt.
+
+            Allerdings ist der Wert immer noch höher als der Literaturwert. Dies kann daran liegen, dass zwar unserer Lufttemperatur $20\ \mathrm{^\circ C}$ betrug, die Temperatur der Flüssigkeit aber nicht. Zudem kann es auch sein, dass die Kugeln nicht perfekt rund sind, was zu einer höheren Reibung führt. Andere Messfehler fließen auch mit ein.
         
     \section{Versuch 2 - Bestimmung der Glycerinkonzentration mit dem Kapillarviskosimeter}
     \label{sec:Versuch2}
@@ -175,10 +190,85 @@
 
             \begin{equation}
                 \nu = K \cdot t
+                \label{eq:kinetamischeViskosität}
             \end{equation}
 
-            lässt sich die kinematische Viskosität berechnen. Dabei ist $K$ eine Konstante, die für jedes Kapillarviskosimeter unterschiedlich ist. Diese Werte sind allerdings schon vorgegeben.
+            lässt sich die kinematische Viskosität berechnen. Dabei ist $K$ eine Konstante, die für jedes Kapillarviskosimeter unterschiedlich ist. Diese Werte sind allerdings schon vorgegeben. Zum Schluss soll das Gesetz von Hagen-Poiseuille überprüft werden. Es wird geschaut, ob die Potenz aus unseren Werten die gleiche ist, wie die Potenz aus dem Gesetz von Hagen-Poiseuille.
 
         \subsection{Auswertung}
 
+            Die folgende Tabelle enthält alle Messwerte von zwei verschiedenen Kapillarviskosimetern. Es handelt sich dabei um Typ III und IIc.
+
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|l||r|r|}
+                    \hline
+                    & Typ III & Typ IIc\\
+                    \hline\hline
+                    Fallzeit $t_{1}\ [\mathrm{s}]$ & $66.04$ & $414.74$\\
+                    Fallzeit $t_{2}\ [\mathrm{s}]$ & $64.80$ & $415.32$\\
+                    Fallzeit $t_{3}\ [\mathrm{s}]$ & $65.08$ & $414.39$\\
+                    \hline
+                    Mittelwert $t\ [\mathrm{s}]$ & $65.30$ & $414.80$\\
+                    Standardabweichung $[\mathrm{s}]$ & $0.65033$ & $0.46972$\\
+                    \hline
+                    K & $0.93419$ & $0.29979$\\
+                    \hline
+                \end{tabular}
+            \end{table}
+
+            Die kinematische Viskosität lässt sich nun mit Hilfe der Formel \ref{eq:kinetamischeViskosität} berechnen:
+
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|l||r|r|}
+                    \hline
+                    & Typ III & Typ IIc\\
+                    \hline\hline
+                    $\nu\ [\mathrm{m^{2}/s}]$ & $61.00296$ & $124.35789$\\
+                    \hline
+                \end{tabular}
+            \end{table}
+
+            Nun soll das Gesetz von Hagen-Poiseuille überprüft werden. Dazu wird die Formel
+
+            \begin{equation}
+                \log\left(\frac{\Delta t_{2}}{\Delta t_{1}}\right) = x \cdot \log\left(\frac{R_{1}}{R_{2}}\right)
+                \label{eq:x-Formel}
+            \end{equation}
+
+            verwendet. Wobei $R$ der Innendurchmesser der Kapillare ist. $R_{1} = 1.005\ \mathrm{mm}$ und $R_{2} = 0.75\ \mathrm{mm}$. Die Werte $\Delta t$ sind die Mittelwerte der Fallzeiten.
+
+            Stellt man die Formel \ref{eq:x-Formel} nun nach $x$ um und setzt die berechneten Werte ein erhalten wir:
+
+            $$x = 6.31682$$
+
+            $x$ stellt die Potenz aus dem Gesetz von Hagen-Poiseuille dar. Diese sollte im Idealfall $4$ betragen.
+
+            Um nun final die Konzentration von Glycerin in der Glycerin-Wasser-Mischung zu bestimmen, benutzten wir die Werte aus dem Anhang und erstellen uns einen Graph, an dem wir die Konzentration ablesen können. Dieser ist in Abbildung \ref{fig:GraphKonzentration} zu sehen.
+
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=0.8\textwidth]{bilder/Konzentration.png}
+                \caption{Graph zur Bestimmung der Glycerinkonzentration.}
+                \label{fig:GraphKonzentration}
+            \end{figure}
+
+            Lesen wir nun die Konzentration der Flüssigkeiten ab, so erhalten wir:
+
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|l||r|r|}
+                    \hline
+                    & Typ III & Typ IIc\\
+                    \hline\hline
+                    Glycerinkonzentration $[\mathrm{\%}]$ & $78$ & $92$\\
+                    \hline
+                \end{tabular}
+            \end{table}
+
         \subsection{Diskussion}
+
+            Zu den Fallzeiten der Flüssigkeiten gibt es nicht viel zu sagen. Die Werte liegen alle in einem angemessenen Rahmen und auch die Standardabweichung ist gering. Es war zudem auch zu erwarten, dass die Fallzeiten von Typ IIc um einiges höher sind, als die von Typ III. Dies liegt daran, dass die Kapillare von Typ IIc einen kleineren Innendurchmesser hat, als die von Typ III. Wenn wir nun die kinematische Viskosität berechnen, so sehen wir allerdings, dass der Wert der Flüssigkeit von Typ IIc das doppelte von Typ III beträgt. Dies kann daran liegen, dass sich in diesem Gefäß eine frischere Lösung befindet, als in dem anderen Gefäß. Dies kommt davon, dass Glycerin hydroskopisch ist und verwässert und dementsprechend ausgetauscht werden muss.
+
+            Diese Werte haben nun auch eine Auswirkung auf die Überprüfung des Gesetzes von Hagen-Poiseuille. Der Wert $x$ ist mit $6.31682$ deutlich höher, als der erwartete Wert $4$. Dies kommt davon, dass die Viskositäten der beiden Flüssigkeiten nicht identisch sind, sondern extrem unterschiedliche Werte betragen.
